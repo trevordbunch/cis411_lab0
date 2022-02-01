@@ -12,8 +12,11 @@ ___
 - The accompanying diagram of what my fork precisely and conceptually represents...
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is /Users/alanahinniss/Documents/GitHub/cis411_lab1_CI
-- The command to navigate to the directory when I open up the command line is cd /Users/alanahinniss/Documents/GitHub/cis411_lab1_CI
+- My local file directory is...
+"/Users/alanahinniss/Documents/GitHub/cis411_lab1_CI"
+
+- The command to navigate to the directory when I open up the command line is...
+"cd /Users/alanahinniss/Documents/GitHub/cis411_lab1_CI"
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
@@ -32,7 +35,30 @@ ___
 # Step 4: Creating a feature branch
 - The output of my git commit log
 ```
-Insert the logs here.
+b51f172 (HEAD -> main, origin/main, origin/HEAD) Create LAB_alanahinniss.md
+dc0b8dd Update package-lock.json
+7490dcb (upstream/main) Add Links to Node in Instructions
+ecaaa53 Update branch terminology
+c552213 Merge pull request #3 from hallienicholas/main
+78ede9f Corrected error
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
+a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
+1ead543 remove LAB.md
+8c38613 Initial commit of labreport with @tangollama
+dabceca Merge pull request #24 from tangollama/circleci
+a4096db Create README.md
+2f01bf4 Update LAB_INSTRUCTIONS.md
+347bd50 Update LAB_INSTRUCTIONS.md
+7aaa9f3 Update LAB_INSTRUCTIONS.md
+37393ae Bug fixed
+1949d2a Update LAB_INSTRUCTIONS.md
+d36ad90 Update LAB.md
+
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
 
