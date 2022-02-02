@@ -129,7 +129,7 @@ a4096db Create README.md
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+![buildsuccess](https://user-images.githubusercontent.com/97567307/152081886-8028f380-14d6-4011-913b-795b02b8342c.png)    
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
