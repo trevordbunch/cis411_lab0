@@ -90,21 +90,17 @@ ce1fcea circleci default config
    
    `working_directory: ~/repo` - indicates the working directory that will be used for the process    
 
-    `steps:` - indicates the steps needed to take to obtain and cache dependencies
+    `steps:` - indicates the steps needed to take to obtain and cache dependencies    
        `checkout`    
-
        `restore_cache:` - downloads and caches dependencies    
-          keys:    
-          - v1-dependencies-{{ checksum "package.json" }}    
-          # fallback to using the latest cache if no exact match is found    
-          - v1-dependencies-    
-
-
+          `keys:`    
+          `- v1-dependencies-{{ checksum "package.json" }}`    
+          `# fallback to using the latest cache if no exact match is found`    
+          `- v1-dependencies-`    
        `save_cache:` - saves the cached files    
           `paths:` - indicates the paths in which the cached files will be saved to    
-            `node_modules`    
-          
-        `run: yarn test`, `run: yarn install` - run specified test(s)     
+            `node_modules`              
+        `run: yarn test`, `run: yarn install` - run specified test(s)   
         
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
