@@ -73,6 +73,7 @@ ce1fcea circleci default config
 968099e remove test db
 7362cd1 working
 44ce6ae Initial commit
+(END)
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
 
