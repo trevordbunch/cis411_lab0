@@ -2,7 +2,7 @@
 ___
 **Course:** CIS 411, Spring 2021  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
-**Name:** Ammanuel Tamrat 
+**Name:** Ammanuel Tamrat  
 **GitHub Handle:** AmmanuelT  
 **Repository:** https://github.com/AmmanuelT/cis411_lab1_CI.git 
 ___
