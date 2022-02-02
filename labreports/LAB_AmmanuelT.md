@@ -2,16 +2,17 @@
 ___
 **Course:** CIS 411, Spring 2021  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
-**Name:** Your Name  
-**GitHub Handle:** Your GitHub Handle  
-**Repository:** Your Forked Repository  
+**Name:** Ammanuel Tamrat 
+**GitHub Handle:** AmmanuelT  
+**Repository:** https://github.com/AmmanuelT/cis411_lab1_CI.git 
 ___
 
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/AmmanuelT/cis411_lab1_CI.git
 </br >
 
-![Forked Repo Diagram](/..assets/repoDiagram.svg)
+* A diagram of the forked repository
+![Forked Repo Diagram](../assets/repoDiagram.svg)
 
 
 # Step 2: Clone your forked repository from the command line  
@@ -79,6 +80,8 @@ ce1fcea circleci default config
 7362cd1 working
 44ce6ae Initial commit
 ```
+
+* A diagram of the branch
 ![Branch Diagram](../assets/branchDiagram.svg)
 
 # Step 5: Setup a Continuous Integration configuration
