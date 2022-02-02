@@ -92,7 +92,6 @@ ce1fcea circleci default config
 
     `steps:` - indicates the steps needed to take to obtain and cache dependencies    
        `checkout`    
-
        `restore_cache:` - downloads and caches dependencies    
           `keys:`    
           `- v1-dependencies-{{ checksum "package.json" }}`    
