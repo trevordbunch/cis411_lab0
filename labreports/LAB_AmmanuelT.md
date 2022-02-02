@@ -8,12 +8,13 @@ ___
 ___
 
 # Step 1: Fork this repository
-- The URL of my forked repository: ENTER URL HERE
-- The accompanying diagram of what my fork precisely and conceptually represents...
+- The URL of my forked repository: https://github.com/AmmanuelT/cis411_lab1_CI.git
+![Forked Repo Diagram](assets/repoDiagram.svg)
+
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is...
-- The command to navigate to the directory when I open up the command line is...
+- My local file directory is where the code I will be making changes to before I commit and push to my online directory
+- The command to navigate to the directory when I open up the command line is ```cd desktop/Spring/cis411/lab/cis411_lab1_CI```
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
@@ -76,7 +77,7 @@ ce1fcea circleci default config
 7362cd1 working
 44ce6ae Initial commit
 ```
-![Branch Diagram](assets/branchDiagram)
+![Branch Diagram](assets/branchDiagram.svg)
 
 # Step 5: Setup a Continuous Integration configuration
 - **What is the .circleci/config.yml doing?**
@@ -100,7 +101,7 @@ ce1fcea circleci default config
   - When a CI build is successful it means that all the dependancies have been installed properly and cached and that the yarn test has passed which means that the commit will not make the code fail tests  
 
 - **If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?**  
- We would add a job that would prepare the code for deployment, test the code and deploy the code.
+  - We would add a job that would prepare the code for deployment, test the code and deploy the code.
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
