@@ -79,16 +79,39 @@ ce1fcea circleci default config
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
-
+   The config.yml file downloads and caches the dependencies, and defines the working directory and desired image being used for the process. If needed, the latest cache is installed if no exact match for certain dependencies is found. 
 
 - What do the various sections on the config file do?  
+  `version: 2` - indicates the version which will be used    
+  `jobs:`- indicates what jobs need to be done    
+     `build:` - indicates the build being implemented    
+         `docker:` - indicates the docker container being used    
+           `image: circleci/node:10.3` - indicates the desired version of image being used    
    
+   `working_directory: ~/repo` - indicates the working directory that will be used for the process    
+
+    `steps:` - indicates the steps needed to take to obtain and cache dependencies
+       `checkout`    
+
+       `restore_cache:` - downloads and caches dependencies    
+          keys:    
+          - v1-dependencies-{{ checksum "package.json" }}    
+          # fallback to using the latest cache if no exact match is found    
+          - v1-dependencies-    
+
+
+       `save_cache:` - saves the cached files    
+          `paths:` - indicates the paths in which the cached files will be saved to    
+            `node_modules`    
+          
+        `run: yarn test`, `run: yarn install` - run specified test(s)     
+        
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+   If a CI (continuous integration) build is successful, it indicates that new code changes to an app are regularly built, tested and merged into a shared repository, allowing the build to receive all necessary changes to be considered as a "good" build.    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   
+   To make the project ready for continuous delivery (CD), I would add several new lines of code which automate the CI process so that all changes can be released and deployed to the main repository.    
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
