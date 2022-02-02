@@ -93,14 +93,15 @@ ce1fcea circleci default config
 
   - First the version tells us what version of circleCI we are running
   - Under jobs we define the different jobs that we want circleCI to be able to run:
-    - We want the build job to run the code in the docker image circleci/node:10.3.
-    - Once in the docker we want the name of the folder in the docker image to be repo.
-    - Next we have the steps that we want to go through when we run build:
-      - checkout clones the project from github
-      - restore_cache restores the cached files if the cache key provided already exists
-      - if there is no key we will run yarn install and install all the dependencies
-      - next run save_cache which will generate the installed dependencies to the key (if it does not already exist) so that we do not have to reinstall all the dependencies everytime we run a job
-      - finally we run the tests  
+  - We want the build job to run the code in the docker image circleci/node:10.3.
+  - Once in the docker we want the name of the folder in the docker to be repo.
+  - Next we have the steps that we want to go through when we run build:
+    - checkout clones the project from github
+    - restore_cache restores the cached files if the cache key provided already exists
+    - if there is no key we will run yarn install and install all the dependencies
+    - next run save_cache which will generate the installed dependencies to the key (if it does not already exist) so that we do not have to reinstall all the dependencies everytime we run a job
+    - finally we run the tests  
+
 
 - **When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?**  
   - When a CI build is successful it means that all the dependancies have been installed properly and cached and that the yarn test has passed which means that the commit will not make the code fail tests  
