@@ -9,7 +9,9 @@ ___
 
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/AmmanuelT/cis411_lab1_CI.git
-![Forked Repo Diagram](assets/repoDiagram.svg)
+</br >
+
+![Forked Repo Diagram](/..assets/repoDiagram.svg)
 
 
 # Step 2: Clone your forked repository from the command line  
@@ -77,7 +79,7 @@ ce1fcea circleci default config
 7362cd1 working
 44ce6ae Initial commit
 ```
-![Branch Diagram](assets/branchDiagram.svg)
+![Branch Diagram](../assets/branchDiagram.svg)
 
 # Step 5: Setup a Continuous Integration configuration
 - **What is the .circleci/config.yml doing?**
