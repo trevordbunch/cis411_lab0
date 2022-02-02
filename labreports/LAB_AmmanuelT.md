@@ -21,9 +21,9 @@ ___
 {
   "data": {
     "mutateAccount": {
-      "id": "5c345bb5-0c54-44ae-8e57-f5f00b0eddbb",
-      "name": "TREVOR BUNCH",
-      "email": "tbunch@messiah.edu"
+      "id": "fe680a5e-8802-4a65-8a13-7d932280c4ab",
+      "name": "Ammanuel Tamrat",
+      "email": "at1345@messiah.edu"
     }
   }
 }
