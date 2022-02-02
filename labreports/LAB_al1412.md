@@ -97,12 +97,9 @@ ce1fcea circleci default config
           `- v1-dependencies-{{ checksum "package.json" }}`    
           `# fallback to using the latest cache if no exact match is found`    
           `- v1-dependencies-`    
-
-
        `save_cache:` - saves the cached files    
           `paths:` - indicates the paths in which the cached files will be saved to    
-            `node_modules`    
-          
+            `node_modules`              
         `run: yarn test`, `run: yarn install` - run specified test(s)     
         
 
