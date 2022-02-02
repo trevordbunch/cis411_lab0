@@ -82,8 +82,9 @@ ce1fcea circleci default config
 - **What is the .circleci/config.yml doing?**
 
   - .circleci/config.yml is the configuration file for circleCI  
- <br />
+
 - **What do the various sections on the config file do?**  
+
   - First the version tells us what version of circleCI we are running
   - Under jobs we define the different jobs that we want circleCI to be able to run:
     - We want the build job to run the code in the docker image circleci/node:10.3.
@@ -94,14 +95,12 @@ ce1fcea circleci default config
       - if there is no key we will run yarn install and install all the dependencies
       - next run save_cache which will generate the installed dependencies to the key (if it does not already exist) so that we do not have to reinstall all the dependencies everytime we run a job
       - finally we run the tests  
-   <br />
+
 - **When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?**  
   - When a CI build is successful it means that all the dependancies have been installed properly and cached and that the yarn test has passed which means that the commit will not make the code fail tests  
-   <br />
+
 - **If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?**  
  We would add a job that would prepare the code for deployment, test the code and deploy the code.
-   
- <br />
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
