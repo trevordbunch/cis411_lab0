@@ -12,7 +12,7 @@ ___
 - The accompanying diagram of what my fork precisely and conceptually represents...
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is ``` D:\Mario\Documents - Copy\ ```    
+- My local file directory is ``` D:\Mario\Documents - Copy\cis411_lab1_CI ```    
 - The command to navigate to the directory when I open up the command line is ``` cd cis411_lab1_CI ```
 
 # Step 3: Run the application locally
