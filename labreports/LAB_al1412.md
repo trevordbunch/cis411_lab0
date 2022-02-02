@@ -94,10 +94,10 @@ ce1fcea circleci default config
        `checkout`    
 
        `restore_cache:` - downloads and caches dependencies    
-          keys:    
-          - v1-dependencies-{{ checksum "package.json" }}    
-          # fallback to using the latest cache if no exact match is found    
-          - v1-dependencies-    
+          `keys:`    
+          `- v1-dependencies-{{ checksum "package.json" }}`    
+          `# fallback to using the latest cache if no exact match is found`    
+          `- v1-dependencies-`    
 
 
        `save_cache:` - saves the cached files    
