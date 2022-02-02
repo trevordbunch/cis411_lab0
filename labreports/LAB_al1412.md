@@ -90,7 +90,7 @@ ce1fcea circleci default config
    
    `working_directory: ~/repo` - indicates the working directory that will be used for the process    
 
-    `steps:` - indicates the steps needed to take to obtain and cache dependencies
+    `steps:` - indicates the steps needed to take to obtain and cache dependencies    
        `checkout`    
 
        `restore_cache:` - downloads and caches dependencies    
