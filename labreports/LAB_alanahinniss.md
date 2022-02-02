@@ -63,16 +63,24 @@ d36ad90 Update LAB.md
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
 
 # Step 5: Setup a Continuous Integration configuration
+
 - What is the .circleci/config.yml doing?  
 
+There is a sequence cycle that the code is going through. Everything starts up and the code is then checked. The cahce is then restored and the dependencies for the project is still installed - it is then checked to make sure it is running properly. 
 
 - What do the various sections on the config file do?  
-   
+
+Firstly, the config file tells you which version it is. It then shows the processes that will be carried out. The dependencies as well as the directory it is in can be viewed. Then if there are cache based on a key, it is restored. There is a run fuction, "yarn install" command which installs specific dependencies - which save the cache. The "yarn test" is runned and then returns results. 
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+
+Pratically, it means that there isnt anything wrong with the build. Philosophically, it can be released or pushed - this shows that it is connected to the GitHub correctly. 
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+
+1) Check to ensure that the code passes all the requirements in which it is test for. 
+2) Ensure that the project is updates regularly. 
+3) Ensure that the project is secure so that it cannot be tampered with by unauthorized individuasl. 
    
 
 # Step 6: Merging the feature branch
