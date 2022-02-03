@@ -31,11 +31,15 @@ ___
 ```
 
 # Step 4: Creating a feature branch
-- The output of my git commit log
+- The output of my git commit log:
 ```
-Insert the logs here.
+    C:\Users\garre\cis411_lab1_CI\labreports>git log --oneline
+    9e4fe83 (HEAD -> labreport, origin/labreport) Changes
+    ba2a85a Adding forked repo diagram
+    048e491 Commiting Lab report
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents...
+- Diagram of Feature Branch and Main Branch Relationship:
+![Forked Repo Diagram](/assets/FeatureBranchDiagram.png)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
