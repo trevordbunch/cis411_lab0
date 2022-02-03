@@ -39,7 +39,7 @@ ___
     048e491 Commiting Lab report
 ```
 - Diagram of Feature Branch and Main Branch Relationship:
-![Forked Repo Diagram](/assets/FeatureBranchDiagram.png)
+![Feature Branch Diagram](/assets/FeatureBranchDiagram.png)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
