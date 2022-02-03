@@ -8,7 +8,7 @@ ___
 ___
 
 # Step 1: Fork this repository
-- The URL of my forked repository: (https://github.com/alanahinniss/cis411_lab1_CI)
+- The URL of my forked repository: https://github.com/alanahinniss/cis411_lab1_CI
 - The accompanying diagram of what my fork precisely and conceptually represents...
 
 # Step 2: Clone your forked repository from the command line  
@@ -16,7 +16,7 @@ ___
 "/Users/alanahinniss/Documents/GitHub/cis411_lab1_CI"
 
 - The command to navigate to the directory when I open up the command line is...
-"cd /Users/alanahinniss/Documents/GitHub/cis411_lab1_CI"
+cd /Users/alanahinniss/Documents/GitHub/cis411_lab1_CI
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
