@@ -9,7 +9,8 @@ ___
 
 # Step 1: Fork this repository
 - The URL of my forked repository: [ggn10/cis411](https://github.com/ggn10/cis411_lab1_CI)
-- The accompanying diagram of what my fork precisely and conceptually represents...
+- Diagram of Forked Repository Relationship:
+![Forked Repo Diagram](/assets/ForkedRepoDiagram.png)
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is: C:\Users\garre\cis411_lab1_CI 
