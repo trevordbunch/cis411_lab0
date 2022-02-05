@@ -112,16 +112,29 @@ ce1fcea circleci default config
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
+c39d381 (HEAD -> main, origin/main, origin/labreport, origin/HEAD, labreport) fixed screenshot for circleCi
+02020fe added screenshot for circleCi
+e921eb6 finsihed up markdown
+fa71326 added descriptions to diagrams
+4c57f0a added descriptions to diagrams
+6d17742 fixed links
+6447c1f added images and finished lab
+d8375b9 fixed markdown
+f82f2f3 adding diagrams and updates to markedown sheet
+2c8c842 added GraphQL response
+7da11cc first commit for lab1 @trevorbunch
+7490dcb Add Links to Node in Instructions
+ecaaa53 Update branch terminology
+c552213 Merge pull request #3 from hallienicholas/main
+78ede9f Corrected error
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
 a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
-1ead543 remove LAB.md
-8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
-a4096db Create README.md
-...
-44ce6ae Initial commit
-(END)
+
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
