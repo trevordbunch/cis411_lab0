@@ -104,11 +104,7 @@ ce1fcea circleci default config
        `save_cache:` - saves the cached files    
           `paths:` - indicates the paths in which the cached files will be saved to    
             `node_modules`              
-<<<<<<< HEAD
-        `run: yarn test`, `run: yarn install` - run specified test(s)     
-=======
         `run: yarn test`, `run: yarn install` - run specified test(s)   
->>>>>>> labreport
         
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
