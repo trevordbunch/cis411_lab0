@@ -43,16 +43,18 @@ ___
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
-
+The config.yml file orchestrates the entire CI/CD process of the project. It defines the entire pipeline fo the project and adapts to the different needs of specific projects. A CircleCI pipeline is the full set of processes that run when work is done on the project. The pipeline coordinates jobs and defines workflow.
 
 - What do the various sections on the config file do?  
-   
+  - Jobs are the starting points of the config. They are a collection of steps, which run commands/scripts as required. The executor declared is a docker along with the specified image for the primary container.
+  - Steps are collection of executable commands required to complete you job. The 'checkout' step checks out the source code for the specific job.
+  - Caches store non-vital data the help run jobs faster. They can be saved and restored for ease of use.
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+When a CI build is successful, it means that the build was built in a way to deliver working software into the hands of the user in the quickest fashion. This is done through the process of building, testing, and releasing software efficiently. Practically, this build is bug-free and functional. 
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   
+In order to make this project ready for delivery, I would figure out how this project/code is going to be delivered to the users. We have integrated the code correctly using circleCI. Now, we need to deliver the changes to the user.
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
@@ -74,11 +76,3 @@ a4096db Create README.md
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
-
-
-
-# Step 8: [EXTRA CREDIT] Augment the core project
-PR reference in the report to one of the following:
-1. Add one or more unit tests to the core assignment project. 
-2. Configure the CircleCI config.yml to automatically build a Docker image of the project.
-3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance.
