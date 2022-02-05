@@ -38,31 +38,28 @@ Insert the logs here.
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
 
 # Step 5: Setup a Continuous Integration configuration
-- What is the .circleci/config.yml doing?  
+- What is the .circleci/config.yml doing?
+  - 
 
 
 - What do the various sections on the config file do?
+  - 
    
 
-- When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
+- When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?
+  - 
    
 
-- If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+- If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?
+  - 
    
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
-a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
-1ead543 remove LAB.md
-8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
-a4096db Create README.md
-...
-44ce6ae Initial commit
-(END)
+0112c77 (HEAD -> labreport) Updates and AddingFork Diagram
+9de2d6d Updates to Steps 1-3
+f48041d (origin/labreport) First Commit. Updating prompt
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
