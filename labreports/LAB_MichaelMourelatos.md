@@ -10,11 +10,11 @@ ___
 
 # Step 1: Fork this repository
 - The URL of my forked repository: [My Forked Repository](https://github.com/MichaelMourelatos/cis411_lab1_CI)
-- The accompanying diagram of what my fork precisely and conceptually represents...
+- The accompanying diagram of what my fork precisely and conceptually represents: ![Fork Diagram](../assets/Updated_Fork_Diagram_2_6.jpg)
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is: "/Users/dev/Desktop/School/Junior\ Year/Spring\ Semester\ 2022/Systems\ Analysis\ and\ Design\ Concepts/cis411_lab1_Cl"
-- The command to navigate to the directory when I open up the command line is... 
+- My local file directory is: /Users/dev/Desktop/School/Junior\ Year/Spring\ Semester\ 2022/Systems\ Analysis\ and\ Design\ Concepts/cis411_lab1_Cl
+- The command to navigate to the directory when I open up the command line is: cd /Users/dev/Desktop/School/Junior\ Year/Spring\ Semester\ 2022/Systems\ Analysis\ and\ Design\ Concepts/cis411_lab1_Cl
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
@@ -41,7 +41,7 @@ Insert the logs here.
 - What is the .circleci/config.yml doing?  
 
 
-- What do the various sections on the config file do?  
+- What do the various sections on the config file do?
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
