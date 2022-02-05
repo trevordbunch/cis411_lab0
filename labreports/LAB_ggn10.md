@@ -59,20 +59,19 @@ In order to make this project ready for delivery, I would figure out how this pr
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
-a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
-1ead543 remove LAB.md
-8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
-a4096db Create README.md
-...
-44ce6ae Initial commit
-(END)
+C:\Users\garre\cis411_lab1_CI\labreports>git log --oneline
+e424114 (HEAD -> main, origin/labreport, labreport) Lab report update
+d3651f4 More Diagram Changes
+e00ffa8 More diagram changes
+6a8b693 Updating diagram
+aa2e52e Updating lab report
+754a76a Updating lab report
+1cbb5be Adding Feature Branch Diagram
+9e4fe83 Changes
+ba2a85a Adding forked repo diagram
+048e491 Commiting Lab report
+7490dcb (upstream/main, origin/main, origin/HEAD) Add Links to Node in Instructions
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
 ![CircleCI Success](../assets/circleci_success.png)
-
-# Step 7: Submitting a Pull Request
-_Remember to reference at least one other student in the PR content via their GitHub handle._
