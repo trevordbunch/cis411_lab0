@@ -16,6 +16,7 @@ ___
 "/Users/alanahinniss/Documents/GitHub/cis411_lab1_CI"
 
 - The command to navigate to the directory when I open up the command line is...
+  
 cd /Users/alanahinniss/Documents/GitHub/cis411_lab1_CI
 
 # Step 3: Run the application locally
