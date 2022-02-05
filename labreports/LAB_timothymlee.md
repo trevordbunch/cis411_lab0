@@ -3,7 +3,7 @@ ___
 **Course:** CIS 411, Spring 2021  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
 **Name:** Timothy Lee  
-**GitHub Handle:** timothymlee
+**GitHub Handle:** timothymlee  
 **Repository:** [Your Forked Repository](https://github.com/timothymlee/cis411_lab1_CI)  
 ___
 
@@ -156,38 +156,35 @@ ce1fcea circleci default config
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
-
+>>> The .circleci/config.yml file runs a yarn test on the contents on package.json
 
 - What do the various sections on the config file do?  
-   
+  - ```version: 2``` specifies the version of CircleCI being utitlized.  
+  - ```jobs:``` acts kind of like a class, containing different children within it. 
+  - ```build:``` and ```steps:``` are the children contained within jobs and are therefor the jobs that have to be executed in the program. They contain the steps that are to be executed.
+  - The ```docker:``` section adds a reference to a docker image for this build.  
+  - ```working_directory: ~/repo``` specifies on which directories to run the steps.
+  - Within ```steps:```, ```checkout``` pulls down the code from the repository, allowing CircleCI to work on it.
+  - ```restore_cache:``` restores the saved cache based on the key, or falls back to the latest if the specified cache isn't found.
+  - ```run: yarn install``` prepares yarn, a meta language used for software packaging systems, to run.
+  - ```save_cache:``` saves the cache.
+  - ```run: yarn test``` runs the test in yarn.
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+>>> This would indicate this it is ready to be deployed.
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+>>> I would add further checks and create the deployment protocal to push it to its website or whatever platform it is to be deployed to.
    
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
-a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
-1ead543 remove LAB.md
-8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
-a4096db Create README.md
-...
-44ce6ae Initial commit
-(END)
+
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
 ![CircleCI Success](../assets/circleci_success.png)
-
-# Step 7: Submitting a Pull Request
-_Remember to reference at least one other student in the PR content via their GitHub handle._
-
 
 
 # Step 8: [EXTRA CREDIT] Augment the core project
