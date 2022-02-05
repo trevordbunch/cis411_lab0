@@ -9,7 +9,9 @@ ___
 
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/al1412/cis411_lab1_CI
-- The accompanying diagram of what my fork precisely and conceptually represents...
+- The accompanying diagram of what my fork precisely and conceptually represents...    
+![Repository diagram](https://user-images.githubusercontent.com/97567307/152659491-7b8effd3-8fe3-4110-9eea-eecb96c7e7ec.jpg)
+
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is ``` D:\Mario\Documents - Copy\cis411_lab1_CI ```    
@@ -75,7 +77,9 @@ ce1fcea circleci default config
 44ce6ae Initial commit
 (END)
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents...
+- The accompanying diagram of what my feature branch precisely and conceptually represents...    
+![Branch Repository diagram](https://user-images.githubusercontent.com/97567307/152659449-932fd15e-0c4f-4902-b2d5-2d4dd1194d7e.jpg)
+
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
@@ -100,7 +104,11 @@ ce1fcea circleci default config
        `save_cache:` - saves the cached files    
           `paths:` - indicates the paths in which the cached files will be saved to    
             `node_modules`              
+<<<<<<< HEAD
         `run: yarn test`, `run: yarn install` - run specified test(s)     
+=======
+        `run: yarn test`, `run: yarn install` - run specified test(s)   
+>>>>>>> labreport
         
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
@@ -170,8 +178,8 @@ ce1fcea circleci default config
 
 
 # Step 7: Submitting a Pull Request
-_Remember to reference at least one other student in the PR content via their GitHub handle._
-
+_Remember to reference at least one other student in the PR content via their GitHub handle._    
+Link to pull request: https://github.com/trevordbunch/cis411_lab1_CI/pull/33#issue-1125034638    
 
 
 # Step 8: [EXTRA CREDIT] Augment the core project
