@@ -10,6 +10,7 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: [Link](https://github.com/timothymlee/cis411_lab1_CI)
 - The accompanying diagram of what my fork precisely and conceptually represents...
+![Forked Repository Diagram](/assets/Lab1Part1_Diagram.svg) 
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is: "C:\Users\timot\Documents\College\Messiah\3rd Year\Spring 2022\CIS 411\Labs\Lab 1\cis411_lab1_CI"
@@ -151,6 +152,7 @@ ce1fcea circleci default config
 (END)
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
+![Forked Repository Diagram](/assets/Lab1Part4_Diagram.svg) 
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
