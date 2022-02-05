@@ -10,7 +10,7 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/alanahinniss/cis411_lab1_CI
 - The accompanying diagram of what my fork precisely and conceptually represents...
-
+![diagram](../assets/fork%20diagram-3.png)
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is...
 "/Users/alanahinniss/Documents/GitHub/cis411_lab1_CI"
@@ -61,6 +61,7 @@ d36ad90 Update LAB.md
 
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
+![diagram 2](../assets/fork%20diagram-2.png)
 
 # Step 5: Setup a Continuous Integration configuration
 
