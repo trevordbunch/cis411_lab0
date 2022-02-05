@@ -173,8 +173,8 @@ ce1fcea circleci default config
 ![buildsuccess](https://user-images.githubusercontent.com/97567307/152081886-8028f380-14d6-4011-913b-795b02b8342c.png)    
 
 # Step 7: Submitting a Pull Request
-_Remember to reference at least one other student in the PR content via their GitHub handle._
-
+_Remember to reference at least one other student in the PR content via their GitHub handle._    
+Link to pull request: https://github.com/trevordbunch/cis411_lab1_CI/pull/33#issue-1125034638    
 
 
 # Step 8: [EXTRA CREDIT] Augment the core project
