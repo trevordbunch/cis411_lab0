@@ -64,7 +64,8 @@ eafe253 Adjust submitting instructions
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-f223c9a (HEAD -> labreport, origin/labreport) first commit @trevordbunch
+0d23043 (HEAD -> labreport) final commit
+f223c9a (origin/labreport) first commit @trevordbunch
 7490dcb (origin/main, origin/HEAD, main) Add Links to Node in Instructions
 ecaaa53 Update branch terminology
 c552213 Merge pull request #3 from hallienicholas/main
@@ -73,6 +74,7 @@ c552213 Merge pull request #3 from hallienicholas/main
 13e571f Update Lab readme, instructions and templates
 eafe253 Adjust submitting instructions
 47e83cd Add images to LabReport
+ec18770 Add Images
 
 ```
 
