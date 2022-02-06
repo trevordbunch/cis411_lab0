@@ -1,10 +1,10 @@
 # Lab Report: Continuous Integration
 ___
-**Course:** CIS 411, Spring 2021  
+**Course:** CIS 411, Spring 2022
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
-**Name:** Your Name  
-**GitHub Handle:** Your GitHub Handle  
-**Repository:** Your Forked Repository  
+**Name:** Nathan Bowman  
+**GitHub Handle:** bowman3239  
+**Repository:** cis411_lab1_Cl  
 ___
 
 # Step 1: Fork this repository
