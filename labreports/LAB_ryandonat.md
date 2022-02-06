@@ -60,14 +60,29 @@ d36ad90 Update LAB.md
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
 
+  .circleci/config.yml is the configuration file which provides an on-demand shell to run whatever is needed. This file outlines what the container will look like, and the steps on how it will be built. Conceptually, a Docker is a "container" which allows code to be run exactly the same in any enviornment. Dockers solve issues of compatability when working on code or project from different places and systems.
 
 - What do the various sections on the config file do?  
-   
+
+  Line #1 indicates the version of the YAML file being used through a comment, also defined in line 5(In this case, 2.0) 
+
+  Lines #6-16: The jobs level contains a collection of arbitrarily named children. build is the first named child in the jobs collection. These lines also defines the docker container, including the version of node. Here the repository is defined as the working directory
+
+  Line #19-25: The steps collection is an ordered list of run directives. Each run directive is executed in the order in which it was declared. From here the configuration file is running whatever commands are inside. The code is checked out, the cache is cleared, dependencies are checked, yarn install is run.
+
+  Line #37: As commented, there is a test to make sure everything works
+
+  Credit to https://circleci.com/docs/2.0/config-intro/ for explaining the CircleCI and the config.yml file.
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+
+  When the build is successful, it indicates that the continuous integration (the process of automatically building and testing your software on a regular basis) enviornment is working, and that there is now a docker container which makes packaging software easier.  
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+
+
+
+
    
 
 # Step 6: Merging the feature branch
