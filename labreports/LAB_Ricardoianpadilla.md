@@ -32,7 +32,22 @@ ___
 # Step 4: Creating a feature branch
 - The output of my git commit log
 ```
-Insert the logs here.
+2319ab7 (HEAD -> labreport, origin/labreport) fixing formate
+b67624c Completed changes from steps 1-3
+d1d531c Adding my Lab to my brand and commiting
+591f44f your commit and reference @trevordbunch in the message
+7490dcb (origin/main, origin/HEAD, main) Add Links to Node in Instructions
+ecaaa53 Update branch terminology
+c552213 Merge pull request #3 from hallienicholas/main
+78ede9f Corrected error
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
+a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
+1ead543 remove LAB.md
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
 
