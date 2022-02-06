@@ -7,18 +7,18 @@ ___
 **Repository:** https://github.com/Cmcculler1/cis411_lab1_CI.git  
 ___
 
-# Step 1: Fork this repository
+#  Fork this repository
 - The URL of my forked repository: https://github.com/Cmcculler1/cis411_lab1_CI.git
 - The accompanying diagram of what my fork precisely and conceptually represents...
 
 ![Use Case](https://docs.google.com/drawings/d/e/2PACX-1vSM21E6IrcEBCWQBCfFdIY3Kngd1a9Srk5YV8zVTyjsLpU3m6K3nM52SNMRf-j82rlTAui6_qznN01q/pub?w=1487&h=691)
 
-# Step 2: Clone your forked repository from the command line  
+#  Clone your forked repository from the command line  
 - My local file directory is... /Users/cmcculler/Documents/GitHub_1
 - The command to navigate to the directory when I open up the command line is...
 "cd"
 
-# Step 3: Run the application locally
+#  Run the application locally
 - My GraphQL response from adding myself as an account on the test project
 ``` json
 {
@@ -32,7 +32,7 @@ ___
 }
 ```
 
-# Step 4: Creating a feature branch
+#  Creating a feature branch
 - The output of my git commit log
 ```
 ce0639e (HEAD -> labreport, origin/labreport) This is my commit @richard-pokrivka
@@ -64,7 +64,7 @@ d36ad90 Update LAB.md
 
 ![Use Case](https://docs.google.com/drawings/d/e/2PACX-1vRnNgh_VtCklmZyZ-v-hh268s5bQ6wPp-M60-avt5YfMlb57l2gcILTSmSC4kRhRgaaf0Gj7YN_p0pO/pub?w=960&h=720)
 
-# Step 5: Setup a Continuous Integration configuration
+#  Setup a Continuous Integration configuration
 - **What is the .circleci/config.yml doing?**  
 It is outling what you are going to build, what the container will look like and the steps that it will actually apply.
 
@@ -79,19 +79,33 @@ It is outling what you are going to build, what the container will look like and
 In order for this project to be ready for continuous delievery, it must be certain that application changes can be released at any time and can reach every system that the project is on without any running errors.
    
 
-# Step 6: Merging the feature branch
+#  Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
+3416a8b (HEAD -> labreport, origin/labreport) Update LAB_Cmcculler1.md
+ce0639e This is my commit @richard-pokrivka
+7490dcb (upstream/main, origin/main, origin/HEAD, main) Add Links to Node in Instructions
+ecaaa53 Update branch terminology
+c552213 Merge pull request #3 from hallienicholas/main
+78ede9f Corrected error
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
 a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
 1ead543 remove LAB.md
 8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
+dabceca Merge pull request #24 from tangollama/circleci
 a4096db Create README.md
-...
-44ce6ae Initial commit
-(END)
+2f01bf4 Update LAB_INSTRUCTIONS.md
+347bd50 Update LAB_INSTRUCTIONS.md
+7aaa9f3 Update LAB_INSTRUCTIONS.md
+37393ae Bug fixed
+1949d2a Update LAB_INSTRUCTIONS.md
+:
+
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
