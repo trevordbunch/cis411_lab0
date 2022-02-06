@@ -10,7 +10,7 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/isaachhm/cis411_lab1_CI.git
 - The accompanying diagram of what my fork precisely and conceptually represents 
-![forked_repo](/assets/repoCI)
+![forked_repo](/assets/repoCI.svg)
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is C:\Users\isaac\OneDrive - Messiah University\Documents\GitHub
@@ -100,7 +100,7 @@ ce1fcea circleci default config
 44ce6ae Initial commit
 
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents ![branches](/assets/feature_branch)
+- The accompanying diagram of what my feature branch precisely and conceptually represents ![branches](/assets/feature_branch.svg)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
@@ -150,7 +150,7 @@ d36ad90 Update LAB.md
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/screenshot.png)
+![CircleCI Success](../assets/screenshot.jpg)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
