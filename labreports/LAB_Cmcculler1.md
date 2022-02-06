@@ -82,9 +82,10 @@ In order for this project to be ready for continuous delievery, it must be certa
 #  Merging the feature branch
 * The output of my git commit log
 ```
-3416a8b (HEAD -> labreport, origin/labreport) Update LAB_Cmcculler1.md
+cd31e98 (HEAD -> main, labreport) my final commit @richard-pokrivka
+3416a8b (origin/labreport) Update LAB_Cmcculler1.md
 ce0639e This is my commit @richard-pokrivka
-7490dcb (upstream/main, origin/main, origin/HEAD, main) Add Links to Node in Instructions
+7490dcb (upstream/main, origin/main, origin/HEAD) Add Links to Node in Instructions
 ecaaa53 Update branch terminology
 c552213 Merge pull request #3 from hallienicholas/main
 78ede9f Corrected error
@@ -103,8 +104,8 @@ a4096db Create README.md
 347bd50 Update LAB_INSTRUCTIONS.md
 7aaa9f3 Update LAB_INSTRUCTIONS.md
 37393ae Bug fixed
-1949d2a Update LAB_INSTRUCTIONS.md
 :
+
 
 ```
 
