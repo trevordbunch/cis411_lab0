@@ -1,15 +1,18 @@
 # Lab Report: Continuous Integration
 ___
-**Course:** CIS 411, Spring 2021  
+**Course:** CIS 411, Spring 2022  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
-**Name:** Your Name  
-**GitHub Handle:** Your GitHub Handle  
-**Repository:** Your Forked Repository  
+**Name:** Kylie Firestone  
+**GitHub Handle:** kfirestone25  
+**Starred Repository:** https://github.com/flutter/flutter  
+**My Forked Repository:** https://github.com/kfirestone25/cis411_lab1_CI 
 ___
 
 # Step 1: Fork this repository
-- The URL of my forked repository: ENTER URL HERE
+- The URL of my forked repository: https://github.com/kfirestone25/cis411_lab1_CI 
 - The accompanying diagram of what my fork precisely and conceptually represents...
+  
+![ForkDiagram](https://docs.google.com/drawings/d/e/2PACX-1vQjfCOIqMcQTjSUloU09xKnwXVVaqSUv2_cJQwweYv58J2xI3eJEv7GW2Jlm24WlJLtimy2xMQUFKRL/pub?w=962&h=634)
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is...
@@ -21,9 +24,9 @@ ___
 {
   "data": {
     "mutateAccount": {
-      "id": "5c345bb5-0c54-44ae-8e57-f5f00b0eddbb",
-      "name": "TREVOR BUNCH",
-      "email": "tbunch@messiah.edu"
+      "id": "4b365fa5-455f-43b9-bdf5-ad80ccaa689a",
+      "name": "Kylie Firestone",
+      "email": "kf1322@messiah.edu"
     }
   }
 }
@@ -66,14 +69,3 @@ a4096db Create README.md
 
 * A screenshot of the _Jobs_ list in CircleCI
 ![CircleCI Success](../assets/circleci_success.png)
-
-# Step 7: Submitting a Pull Request
-_Remember to reference at least one other student in the PR content via their GitHub handle._
-
-
-
-# Step 8: [EXTRA CREDIT] Augment the core project
-PR reference in the report to one of the following:
-1. Add one or more unit tests to the core assignment project. 
-2. Configure the CircleCI config.yml to automatically build a Docker image of the project.
-3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance.
