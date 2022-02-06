@@ -11,6 +11,8 @@ ___
 - The URL of my forked repository: ENTER URL HERE
 - The accompanying diagram of what my fork precisely and conceptually represents...
 
+![Fork Repository Diagram](/assets/ForkRepo.svg)
+
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is...
 - The command to navigate to the directory when I open up the command line is...
@@ -21,9 +23,9 @@ ___
 {
   "data": {
     "mutateAccount": {
-      "id": "5c345bb5-0c54-44ae-8e57-f5f00b0eddbb",
-      "name": "TREVOR BUNCH",
-      "email": "tbunch@messiah.edu"
+      "id": "e34ecf0a-1917-4434-81df-378cbad9cfbb",
+      "name": "Azianna Yang",
+      "email": "ay1191@messiah.edu"
     }
   }
 }
@@ -32,40 +34,98 @@ ___
 # Step 4: Creating a feature branch
 - The output of my git commit log
 ```
-Insert the logs here.
+ecaaa53 Update branch terminology
+c552213 Merge pull request #3 from hallienicholas/main
+78ede9f Corrected error
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
+a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
+1ead543 remove LAB.md
+8c38613 Initial commit of labreport with @tangollama
+dabceca Merge pull request #24 from tangollama/circleci
+a4096db Create README.md
+2f01bf4 Update LAB_INSTRUCTIONS.md
+347bd50 Update LAB_INSTRUCTIONS.md
+7aaa9f3 Update LAB_INSTRUCTIONS.md
+37393ae Bug fixed
+1949d2a Update LAB_INSTRUCTIONS.md
+d36ad90 Update LAB.md
+59ef18a Update LAB_INSTRUCTIONS.md
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
+- 
+  ![Branch Repository Diagram](/assets/Branch_Relationship.svg)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
-
+```
+This file contains all the configuration settings that are needed to deploy your cluster.
+```
 
 - What do the various sections on the config file do?  
-   
+   ```
+   The Docker section is a list of the Docker images that are pulled
+   from Docker Hub by the installer during the IBM Cloud Private-CE
+   installation process. Essentially it is a library of pre-built images.
+
+   Working directory is my repository.
+
+   Without the checkout step, CircleCI doesn't have my code. Without the code, it can't run tests, complie my code, nor deploy my code.
+
+   Restore cache step with the dependencies allow me to fall back on the latest cache.
+
+   Yarn is an open-source package manager for JavaScript. The packages it installs can be cached. This could speed up and improvie CI build times and it also reduces errors related to network connectivity.
+
+   Saving the cache make the jobs faster on CircleCI. It reuses the data from previous jobs and it also reduces the cost of fetch operations. Caching is about achieving balance between reliability and getting maximum performance. By adding a save_cache step in .circleci/config.yml file, it saves a cache of a file or directory.
+
+   ```
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+ ```
+ Successful CI means new code changes to an app are regulary built, tested, and merged to a shared repository.
+ ```
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+
+```
+I would include validation parameters. I would also add security parameters.
+```
    
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
+33ae69c (HEAD -> main, labreport) Continuous Integration Lab
+7490dcb (origin/main, origin/HEAD) Add Links to Node in Instructions
+ecaaa53 Update branch terminology
+c552213 Merge pull request #3 from hallienicholas/main
+78ede9f Corrected error
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
 a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
 1ead543 remove LAB.md
 8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
+dabceca Merge pull request #24 from tangollama/circleci
 a4096db Create README.md
-...
-44ce6ae Initial commit
-(END)
+2f01bf4 Update LAB_INSTRUCTIONS.md
+347bd50 Update LAB_INSTRUCTIONS.md
+7aaa9f3 Update LAB_INSTRUCTIONS.md
+37393ae Bug fixed
+1949d2a Update LAB_INSTRUCTIONS.md
+d36ad90 Update LAB.md
+59ef18a Update LAB_INSTRUCTIONS.md
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+![CircleCI Success](/assets/circleci_success.png)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
