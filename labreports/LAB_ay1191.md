@@ -2,9 +2,9 @@
 ___
 **Course:** CIS 411, Spring 2021  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
-**Name:** Your Name  
-**GitHub Handle:** Your GitHub Handle  
-**Repository:** Your Forked Repository  
+**Name:** Azianna Yang  
+**GitHub Handle:** ay1191  
+**Repository:** https://github.com/ay1191/cis411_lab1_CI  
 ___
 
 # Step 1: Fork this repository
@@ -99,9 +99,10 @@ I would include validation parameters. I would also add security parameters.
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-43cc63b (HEAD -> main, labreport) Continous Integration Lab
+cf16534 (HEAD -> main, origin/main, origin/HEAD) added images
+43cc63b (labreport) Continous Integration Lab
 33ae69c Continuous Integration Lab
-7490dcb (origin/main, origin/HEAD) Add Links to Node in Instructions
+7490dcb Add Links to Node in Instructions
 ecaaa53 Update branch terminology
 c552213 Merge pull request #3 from hallienicholas/main
 78ede9f Corrected error
@@ -136,6 +137,11 @@ fe1937b more in the lab instructions
 3e807fb first section
 9ae6b83 remove LAB.md
 e429c1a lab instructions
+ce1fcea circleci default config
+80bbdbb circleci default config
+968099e remove test db
+7362cd1 working
+44ce6ae Initial commit
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
