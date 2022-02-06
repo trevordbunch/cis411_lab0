@@ -51,9 +51,9 @@ eafe253 Adjust submitting instructions
 
 - What do the various sections on the config file do?  
    * The version command specifies which version of Circle CI it should run and it also allows it to see if there are any deprecated commands.
-   * The say-hello line specifies the name of the job
-   * The jobs command allows the programmer to program what jobs it wants circle ci to complete in order for it to pass. In the example code, it creates an image for the software docker which specifies what environment you want to run this code in, then it specifies the steps you want to take in this environment.  In this case, the program will checkout the code with github, then the run command prints out "Hello World" to the shell.  In circle ci, this step is named "Say hello" as set by the "name" keyword.    
-   * The workflows section of this code allows you to create, name, and execute workflows, which are just groups of jobs.  You can specify triggers and say what jobs you want to run together by using a workflow.  In this case, the workflow is named "say-hello-workflow" and it runs the job "say-hello" which is defined above it.  
+   * The build line specifies the name of the job
+   * The jobs command allows the programmer to program what jobs it wants circle ci to complete in order for it to pass. In the example code, it creates an image for the software docker which specifies what environment you want to run this code in, then it specifies the steps you want to take in this environment.  In this case, the program will checkout the code with github, restore the cache with the specified dependencies, run "yarn install" on the command line, save the cache, the run yarn test on teh command line.   
+   * Note:  You can add a workflows section of the code, which allows you to create, name, and execute workflows, which are just groups of jobs.  You can specify triggers and say what jobs you want to run together by using a workflow.  
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
   * When the CI build is successful, it means that it completed all of the jobs without error.  If the jobs are programmed correctly and precisely, this means that the code has passed all of the tests it needs to in order for it to be delivered to the masses or merged with the main branch of code.  Using the analogy from before, it means that the gatekeeper has agreed to let it pass because it completed all of its tasks/jobs.  
