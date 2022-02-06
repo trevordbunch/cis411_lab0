@@ -64,17 +64,17 @@ eafe253 Adjust submitting instructions
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-0d23043 (HEAD -> labreport) final commit
+7301e45 (HEAD -> labreport) some grammitcal errors fixed and some content changed
+29c3b10 (main) actual final commit
+0d23043 final commit
 f223c9a (origin/labreport) first commit @trevordbunch
-7490dcb (origin/main, origin/HEAD, main) Add Links to Node in Instructions
+7490dcb (origin/main, origin/HEAD) Add Links to Node in Instructions
 ecaaa53 Update branch terminology
 c552213 Merge pull request #3 from hallienicholas/main
 78ede9f Corrected error
 1fe415c Merge pull request #1 from trevordbunch/labreport
 13e571f Update Lab readme, instructions and templates
 eafe253 Adjust submitting instructions
-47e83cd Add images to LabReport
-ec18770 Add Images
 
 ```
 
