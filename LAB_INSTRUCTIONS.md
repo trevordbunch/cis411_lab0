@@ -19,9 +19,9 @@
 
 ## Step 3: Run the application locally
 1. If you haven't already - make sure that you have installed [node.js](https://nodejs.org/en/download/) and [npm](https://docs.npmjs.com/cli/install)
-4. Run ```npm install``` and watch the magic happen.
-5. Run ```npm start``` and navigate to http://localhost:4000/graphql.
-6. Run the following GraphQL mutation in GraphiQL and **record the response**.
+2. Run ```npm install``` and watch the magic happen.
+3. Run ```npm start``` and navigate to http://localhost:4000/graphql.
+4. Run the following GraphQL mutation in GraphiQL and **record the response**.
 ```
 mutation {
   mutateAccount(input: {
