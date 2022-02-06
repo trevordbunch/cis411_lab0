@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/trevordbunch/cis411_lab1_CI#readme",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.2",
     "express-graphql": "^0.6.12",
     "graphql": "^14.0.2",
     "lokijs": "^1.5.5",
