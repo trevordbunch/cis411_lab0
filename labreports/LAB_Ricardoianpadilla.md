@@ -144,7 +144,7 @@ ce1fcea circleci default config
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](cis411_lab1_CI/Lab1Step6.png)
+![CircleCI Success](cis411_lab1_CI/Lab1Step6.png) 
 
 # Step 7: Submitting a Pull Request
 @al1412
