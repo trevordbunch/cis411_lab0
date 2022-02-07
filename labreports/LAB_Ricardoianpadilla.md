@@ -10,7 +10,7 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/Ricardoianpadilla/cis411_lab1_CI 
 - The accompanying diagram of what my fork precisely and conceptually represents...
-![Fork Diagram](cis411_lab1_CI/Lab1Step1.png)
+![Fork Diagram](https://github.com/Ricardoianpadilla/cis411_lab1_CI/blob/4449b2952dae571541609a1fe808f8cb22435b13/Lab1Step1.png)
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is ```/Users/ricardopadilla/Documents/git```
@@ -78,7 +78,7 @@ ce1fcea circleci default config
 7362cd1 working
 44ce6ae Initial commit
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents..![Branch Diagram](cis411_lab1_CI/Lab1Step4.png)
+- The accompanying diagram of what my feature branch precisely and conceptually represents..![Branch Diagram](https://github.com/Ricardoianpadilla/cis411_lab1_CI/blob/4449b2952dae571541609a1fe808f8cb22435b13/Lab1Step4.png)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
@@ -144,7 +144,7 @@ ce1fcea circleci default config
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](cis411_lab1_CI/Lab1Step6.png) 
+![CircleCI Success](https://github.com/Ricardoianpadilla/cis411_lab1_CI/blob/4449b2952dae571541609a1fe808f8cb22435b13/Lab1Step6.png) 
 
 # Step 7: Submitting a Pull Request
 @al1412
