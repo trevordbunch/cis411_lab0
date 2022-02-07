@@ -76,6 +76,9 @@ ab312fc more progress
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
 
+![Feature Branch](../assets/Feature_Branch%20.jpg)
+
+
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
   
