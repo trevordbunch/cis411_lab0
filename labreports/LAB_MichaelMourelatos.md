@@ -76,12 +76,13 @@ f48041d (origin/labreport) First Commit. Updating prompt
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-6b43af9 (HEAD -> labreport) Adding diagrams
+85d8b49 (HEAD -> main, origin/labreport, labreport) Final Commit
+6b43af9 Adding diagrams
 abef1db Editing some of the Steps
 1c4ca2e Adding Logs
 0112c77 Updates and AddingFork Diagram
 9de2d6d Updates to Steps 1-3
-f48041d (origin/labreport) First Commit. Updating prompt
+f48041d First Commit. Updating promp
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
