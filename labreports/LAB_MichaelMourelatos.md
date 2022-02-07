@@ -11,7 +11,7 @@ ___
 
 # Step 1: Fork this repository
 - The URL of my forked repository: [Michael Mourelatos Forked Repository](https://github.com/MichaelMourelatos/cis411_lab1_CI)
-- The accompanying diagram of what my fork precisely and conceptually represents: ![Fork Diagram](/assets/Updated_Fork_Diagram_2_6.jpg)
+- The accompanying diagram of what my fork precisely and conceptually represents: ![Fork Diagram](/assets/Fork_Diagram_2_6.jpg)
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is: /Users/dev/Desktop/School/Junior\ Year/Spring\ Semester\ 2022/Systems\ Analysis\ and\ Design\ Concepts/cis411_lab1_Cl
@@ -38,7 +38,7 @@ ___
 9de2d6d Updates to Steps 1-3
 f48041d (origin/labreport) First Commit. Updating prompt
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents...
+- The accompanying diagram of what my feature branch precisely and conceptually represents: ![Branch Diagram](/assets/Branches_Diagram_2_6.jpg)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?
@@ -83,7 +83,7 @@ f48041d (origin/labreport) First Commit. Updating prompt
 ![CircleCI Success](/assets/Screenshot_of_Jobs_List.png)
 
 # Step 7: Submitting a Pull Request
-_Remember to reference at least one other student in the PR content via their GitHub handle._
+
 Worked with [Grace-Schl](https://github.com/Grace-Schl) and [AndrewColdmith](https://github.com/andrewcoldsmith)
 
 
