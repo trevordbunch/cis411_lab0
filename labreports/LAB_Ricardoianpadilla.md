@@ -10,7 +10,7 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/Ricardoianpadilla/cis411_lab1_CI 
 - The accompanying diagram of what my fork precisely and conceptually represents...
-![Fork Diagram](Lab1Step1.png)
+![Fork Diagram](cis411_lab1_CI/Lab1Step1.png)
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is ```/Users/ricardopadilla/Documents/git```
@@ -78,21 +78,23 @@ ce1fcea circleci default config
 7362cd1 working
 44ce6ae Initial commit
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents..![Branch Diagram](Lab1Step4.png)
-
+- The accompanying diagram of what my feature branch precisely and conceptually represents..![Branch Diagram](cis411_lab1_CI/Lab1Step4.png)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
-
+  It checks if the directory is working.
 
 - What do the various sections on the config file do?  
-   
+steps - tells the steps needed to obtain dependencies
+jobs - tell which job is to be done
+run -run some test(s)   
+paths - tells the paths that the cached files will be at  
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+   It just indicated that the build is regular and good.
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   
+   I would go through the ci process so all changes are checked and ready for CD.
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
@@ -115,15 +117,38 @@ dabceca Merge pull request #24 from tangollama/circleci
 a4096db Create README.md
 2f01bf4 Update LAB_INSTRUCTIONS.md
 347bd50 Update LAB_INSTRUCTIONS.md
+7aaa9f3 Update LAB_INSTRUCTIONS.md
+37393ae Bug fixed
+1949d2a Update LAB_INSTRUCTIONS.md
+d36ad90 Update LAB.md
+59ef18a Update LAB_INSTRUCTIONS.md
+37be3c8 Update LAB_INSTRUCTIONS.md
+97da547 Update LAB.md
+0bd6244 updated Step 0 title
+4562cd8 added npm and node install repreq
+255051e adding template
+13a09b7 Adding the LAB.md and correcting some instructions.
+d2ddea5 Version 0.0.1 of the lab isntructions
+ab312fc more progress
+62fb0a5 more progress
+fe1937b more in the lab instructions
+3e807fb first section
+9ae6b83 remove LAB.md
+e429c1a lab instructions
+ce1fcea circleci default config
+80bbdbb circleci default config
+968099e remove test db
+7362cd1 working
 44ce6ae Initial commit
 (END)
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+![CircleCI Success](cis411_lab1_CI/Lab1Step6.png)
 
 # Step 7: Submitting a Pull Request
 @al1412
+
 
 
 # Step 8: [EXTRA CREDIT] Augment the core project
