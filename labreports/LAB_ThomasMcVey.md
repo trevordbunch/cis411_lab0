@@ -119,16 +119,16 @@ ce1fcea circleci default config
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
-
+It appears to create an environment for itself to run, then it goes through my github files/code and checks to make sure everything is in order and needed dependencies are not missing, and whatever is needed to be installed is installed and saved to a cache?
 
 - What do the various sections on the config file do?  
-   
+Go through various checks and determine how to apply them appropriately to your code so that it can run on any device?
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+That the build is stable, free of potential bugs and can run on nearly any device?
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   
+I honestly have no idea. I look forward to hearing you explain it to us in class.
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
