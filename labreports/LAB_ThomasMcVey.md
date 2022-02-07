@@ -12,7 +12,7 @@ ___
 ![Use Case Diagram](/assets/LabCIDiagram1.svg) 
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is... cis411_lab1_CI
+- My local file directory is: cis411_lab1_CI
 - The command to navigate to the directory when I open up the command line is: cd cis411_lab1_CI
 
 # Step 3: Run the application locally
@@ -21,9 +21,9 @@ ___
 {
   "data": {
     "mutateAccount": {
-      "id": "5c345bb5-0c54-44ae-8e57-f5f00b0eddbb",
-      "name": "TREVOR BUNCH",
-      "email": "tbunch@messiah.edu"
+      "id": "b2ced37e-a11f-432e-89ad-502b4b83a3e9",
+      "name": "Thomas McVey",
+      "email": "tm1378@messiah.edu"
     }
   }
 }
