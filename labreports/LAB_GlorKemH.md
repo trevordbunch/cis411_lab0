@@ -43,15 +43,22 @@ Insert the logs here.
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
 
+It contains all the configuration setting. It defines an entire pipeline for your project
+
 
 - What do the various sections on the config file do?  
    
+   The first part is the shell part. You can setup your build and execute it as a shell command.
+   The second part of the configuration section is the information collection then the preparation to start the build.
+
+
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
    
+   It means that the build is ready and secured to move on. The build has fufilled all aspected of the steps needed before it is deployed. The succesful process makes the working software effiecient and easier for users
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   
+   I think I would make it clear within my process the standards of CI build and the expectation
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
