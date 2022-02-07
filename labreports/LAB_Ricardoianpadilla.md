@@ -97,14 +97,24 @@ ce1fcea circleci default config
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
+ricardopadilla@Ricardos-MacBook-Air cis411_lab1_CI % git log --oneline
+7490dcb (HEAD -> main, origin/main, origin/HEAD) Add Links to Node in Instructions
+ecaaa53 Update branch terminology
+c552213 Merge pull request #3 from hallienicholas/main
+78ede9f Corrected error
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
 a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
 1ead543 remove LAB.md
 8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
+dabceca Merge pull request #24 from tangollama/circleci
 a4096db Create README.md
-...
+2f01bf4 Update LAB_INSTRUCTIONS.md
+347bd50 Update LAB_INSTRUCTIONS.md
 44ce6ae Initial commit
 (END)
 ```
@@ -113,8 +123,7 @@ a4096db Create README.md
 ![CircleCI Success](../assets/circleci_success.png)
 
 # Step 7: Submitting a Pull Request
-_Remember to reference at least one other student in the PR content via their GitHub handle._
-
+@al1412
 
 
 # Step 8: [EXTRA CREDIT] Augment the core project
