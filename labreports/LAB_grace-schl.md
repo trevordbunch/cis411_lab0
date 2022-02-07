@@ -80,12 +80,6 @@ ab312fc more progress
 - What is the .circleci/config.yml doing?  
   
   - The config file is grabbing (and in a sense cloning) your code so that the file can read it and is then checking the code for errors. It runs a test of the code through yarn which is a package manager, and replaces any errors with new code that edits out the error. 
-    
-  
-   
-  The working directory is next selected as "~/repo".  
-  The next tag is steps, which begins by performing a checkout which switches to  
-  Checkout is checking the code from your selected working_directory so it can be used. Without this step the file will not have your code
 
 
 - What do the various sections on the config file do?  
@@ -100,13 +94,13 @@ ab312fc more progress
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
   
-  following requirements
+  - When a CI build is successful, it indicates that the code has been fully checked for errors and all of the error files passed the check.  
+  - This bascially means that the code you have is correct and should work properly without breaking.
    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
   
-  A way for this to run automatically in specified intervals
-  A way for the code to be sent out after going through yarn
+  - In order to take this to the next step and ready this project for Continuous Delivery, I would make sure that there is a way for this file to run automatically at a specified interval (i.e. daily, weekly, etc.). I would also make sure there is a way for the code to be sent out after going through yarn so that any edited errors can addressed as soon as possible.
    
 
 # Step 6: Merging the feature branch
