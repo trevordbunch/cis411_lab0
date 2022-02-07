@@ -82,7 +82,7 @@ abef1db Editing some of the Steps
 1c4ca2e Adding Logs
 0112c77 Updates and AddingFork Diagram
 9de2d6d Updates to Steps 1-3
-f48041d First Commit. Updating promp
+f48041d First Commit. Updating prompt
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
