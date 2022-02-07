@@ -50,7 +50,7 @@ f48041d (origin/labreport) First Commit. Updating prompt
 
     - Build is what establishes what will be used, tested, or run. In this example, we are using Yarn, so, Build sets up Yarn so it can be used.
   
-    - Docker is a [platform that creates an isolated enviornment for running applications](https://www.jenkins.io/doc/book/installing/docker/). This allows the code as shown to be run, and being able to install Yarn.
+    - Docker is a [platform that creates an isolated environment for running applications](https://www.jenkins.io/doc/book/installing/docker/). This allows the code as shown to be run, and being able to install Yarn.
     
     - The "image: circleci/node:10.3" is a docker image which entails it is the project/code selected to be scanned.
     
@@ -76,7 +76,12 @@ f48041d (origin/labreport) First Commit. Updating prompt
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-
+6b43af9 (HEAD -> labreport) Adding diagrams
+abef1db Editing some of the Steps
+1c4ca2e Adding Logs
+0112c77 Updates and AddingFork Diagram
+9de2d6d Updates to Steps 1-3
+f48041d (origin/labreport) First Commit. Updating prompt
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
