@@ -11,24 +11,27 @@ ___
 - The URL of my forked repository: https://github.com/GlorKemH/cis411_lab1_CI.git
 
 - The accompanying diagram of what my fork precisely and conceptually represents...
+ ![test](../assets/Fork Diagram\) 
+
+
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is...
-- The command to navigate to the directory when I open up the command line is...
+- /Users/gloriahoungbeke/Desktop/Ghelp
+- The command to navigate to the directory when I open up the command line is cd
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
 ``` json
+
 {
   "data": {
     "mutateAccount": {
-      "id": "5c345bb5-0c54-44ae-8e57-f5f00b0eddbb",
-      "name": "TREVOR BUNCH",
-      "email": "tbunch@messiah.edu"
+      "id": "afcfaf11-9f75-4efa-9471-621443d168f6",
+      "name": "Kemi Gloria Houngbeke",
+      "email": "gh1241@messiah.edu"
     }
   }
 }
-```
 
 # Step 4: Creating a feature branch
 - The output of my git commit log
