@@ -10,6 +10,7 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/Ricardoianpadilla/cis411_lab1_CI 
 - The accompanying diagram of what my fork precisely and conceptually represents...
+![Fork Diagram](Lab1Step1.png)
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is ```/Users/ricardopadilla/Documents/git```
@@ -48,8 +49,37 @@ ec18770 Add Images
 dbf826a Answer Step 4
 a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
 1ead543 remove LAB.md
+:...skipping...
+2319ab7 (HEAD -> labreport, origin/labreport) fixing formate
+b67624c Completed changes from steps 1-3
+d1d531c Adding my Lab to my brand and commiting
+591f44f your commit and reference @trevordbunch in the message
+7490dcb (origin/main, origin/HEAD, main) Add Links to Node in Instructions
+ecaaa53 Update branch terminology
+1949d2a Update LAB_INSTRUCTIONS.md
+d36ad90 Update LAB.md
+59ef18a Update LAB_INSTRUCTIONS.md
+37be3c8 Update LAB_INSTRUCTIONS.md
+97da547 Update LAB.md
+0bd6244 updated Step 0 title
+4562cd8 added npm and node install repreq
+255051e adding template
+13a09b7 Adding the LAB.md and correcting some instructions.
+d2ddea5 Version 0.0.1 of the lab isntructions
+ab312fc more progress
+62fb0a5 more progress
+fe1937b more in the lab instructions
+3e807fb first section
+9ae6b83 remove LAB.md
+e429c1a lab instructions
+ce1fcea circleci default config
+80bbdbb circleci default config
+968099e remove test db
+7362cd1 working
+44ce6ae Initial commit
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents...
+- The accompanying diagram of what my feature branch precisely and conceptually represents..![Branch Diagram](Lab1Step4.png)
+
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
