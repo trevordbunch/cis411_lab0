@@ -121,4 +121,4 @@ ___
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+![CircleCI Success](/assets/circleci_success.png)

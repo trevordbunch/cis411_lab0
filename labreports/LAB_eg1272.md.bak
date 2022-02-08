@@ -59,26 +59,25 @@ ___
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing? 
-	The current config.yml is determining the Version, directory, & dependencies used. Specificly
-	the checkout step is pulling one's code from the project selected into cricleci.
+	The current config.yml is determining the Version, directory, and dependencies in use. 
+    Specificly, the checkout step is pulling one's code from the selected project into cricleci.
 
 
 - What do the various sections on the config file do?
-	The docker step determines the version/dependencies.
-	The working_directory step finds the specfic directory or repo being used.
-	Checkout grabs the code from github/the source used and saves this in cache
-	run: yarn install applies dependencies to the codebase
-	save_cache stores a cache in object storage
-	run: yarn test will run the script named test in one's package
+	The [docker] step determines the version/dependencies.
+	The [working_directory] step finds the specfic directory or repo being used.
+	[Checkout] grabs the code from github/the source used and saves this in cache.
+	[run: yarn install] applies dependencies to the codebase.
+	[save_cache] stores a cache in object storage.
+	[run: yarn test] will run the script named test in one's package if one decides to define that.
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-	CricleCI was able to grab all code from one's VCS software, compile & run that project with all it's dependencies, without error.
+	If the build was successful, CricleCI was able to grab all code from one's VCS software and compile & run that project with all it's dependencies, without running into a terminal error.
    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)? 
-	While having the build sucessfully run there is still a possibility that it is running with an unintended design/visual error. Before fully committing an actual human should
-	take a look at the visual/execuatable output of what the project executes on the latest build that is about to be delivered.
+	While having the build run sucessfully there is still a possibility that it is running with an unintended design/visual error. Before fully committing an actual human should take a look at the visual/execuatable output of what the project creates on the latest build that is about to be delivered.
    
 
 # Step 6: Merging the feature branch
