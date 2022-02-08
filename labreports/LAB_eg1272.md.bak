@@ -1,0 +1,91 @@
+# Lab Report: Continuous Integration
+___
+**Course:** CIS 411, Spring 2021  
+**Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
+**Name:** Elias Gregory
+**GitHub Handle:** https://github.com/eg1272
+**Repository:** https://github.com/eg1272/cis411_lab1_CI
+___
+
+# Step 1: Fork this repository
+- The URL of my forked repository: https://github.com/eg1272/cis411_lab1_CI
+![Use Case Diagram](/assets/sub.png)
+- rrrr
+
+# Step 2: Clone your forked repository from the command line  
+- My local file directory is: (C:\Users\admin\Documents\GitHub\cis411_lab1_CI)
+- The command to navigate to the directory when I open up the command line is: (CD C:\Users\admin\Documents\GitHub\cis411_lab1_CI)
+
+# Step 3: Run the application locally
+- My GraphQL response from adding myself as an account on the test project
+``` json
+{
+  "data": {
+    "mutateAccount": {
+      "id": "1e007595-7072-45aa-be86-2cff3cec5a1b",
+      "name": "Elias Gregory",
+      "email": "eg1272@messiah.edu"
+    }
+  }
+}
+```
+
+# Step 4: Creating a feature branch
+- The output of my git commit log
+```
+Insert the logs here.
+```
+![Use Case Diagram](/assets/full.png)
+
+# Step 5: Setup a Continuous Integration configuration
+- What is the .circleci/config.yml doing? 
+	The current config.yml is determining the Version, directory, & dependencies used. Specificly
+	the checkout step is pulling one's code from the project selected into cricleci.
+
+
+- What do the various sections on the config file do?
+	The docker step determines the version/dependencies.
+	The working_directory step finds the specfic directory or repo being used.
+	Checkout grabs the code from github/the source used and saves this in cache
+	run: yarn install applies dependencies to the codebase
+	save_cache stores a cache in object storage
+	run: yarn test will run the script named test in one's package
+   
+
+- When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
+	CricleCI was able to grab all code from one's VCS software, compile & run that project with all it's dependencies, without error.
+   
+
+- If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)? 
+	While having the build sucessfully run there is still a possibility that it is running with an unintended design/visual error. Before fully committing an actual human should
+	take a look at the visual/execuatable output of what the project executes on the latest build that is about to be delivered.
+   
+
+# Step 6: Merging the feature branch
+* The output of my git commit log
+```
+Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
+dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
+a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
+1ead543 remove LAB.md
+8c38613 Initial commit of labreport with @tangollama
+dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
+a4096db Create README.md
+...
+44ce6ae Initial commit
+(END)
+```
+
+* A screenshot of the _Jobs_ list in CircleCI
+![CircleCI Success](../assets/circleci_success.png)
+
+# Step 7: Submitting a Pull Request
+_Remember to reference at least one other student in the PR content via their GitHub handle._
+
+
+
+# Step 8: [EXTRA CREDIT] Augment the core project
+PR reference in the report to one of the following:
+1. Add one or more unit tests to the core assignment project. 
+2. Configure the CircleCI config.yml to automatically build a Docker image of the project.
+3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance.
