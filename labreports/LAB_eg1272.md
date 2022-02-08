@@ -10,7 +10,9 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/eg1272/cis411_lab1_CI
 ![Use Case Diagram](/assets/sub.png)
-- rrrr
+- Whats unique about a fork in a DVCS is that the full repository is present on each client's computer.
+  This is different than the Source Control Branch as each client has their own repository masters to 
+  commit/push changes to while a simple Source Control Branch would require a strict Master.
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is: (C:\Users\admin\Documents\GitHub\cis411_lab1_CI)
