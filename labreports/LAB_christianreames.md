@@ -102,7 +102,11 @@ a4096db Create README.md
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
+<<<<<<< HEAD
 @Cmcculler1 @richard-pokrivka
+=======
+@Cmcculler1
+>>>>>>> labreport
 
 
 # Step 8: [EXTRA CREDIT] Augment the core project
