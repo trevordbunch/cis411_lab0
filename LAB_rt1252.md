@@ -114,10 +114,12 @@ Saving cache - CicleCI stores the cache so packages do not need to be re-downloa
 Run NPM tests - CIrcleCI runs the tests that are defined in the projects package.json file by using the command npm test. If the tests pass this unit test will pass.
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+  
+When a CI build is successful it indicates that the build process was able to be completed error free. This means that the code that has been developed and is of high enough quality to pass the needed requirements. Practically this means that the code is ready to continue through the project pipeline. 
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
    
+I would edit the package.json file to include specific unit tests for the project, these might be more specific to the project itself to ensure that the code is able to complete the task that it was designed to complete. 
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
