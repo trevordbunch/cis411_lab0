@@ -170,11 +170,12 @@ ce1fcea circleci default config
 968099e remove test db
 7362cd1 working
 44ce6ae Initial commit
-
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+![CircleCI Success](/assets/step_6_jobs_ss_2.png)
+![CircleCI Success](/assets/step_6_jobs_ss_3.png)
+![CircleCI Success](/assets/step_6_jobs_ss.png)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
