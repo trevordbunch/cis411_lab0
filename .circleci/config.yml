@@ -22,7 +22,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: yarn install
+      - run: npm install
 
       - save_cache:
           paths:
@@ -30,7 +30,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: --passWithNoTests
+      - run: npm ci:test
 
       - setup_remote_docker:
           docker_layer_caching: true
@@ -44,4 +44,4 @@ jobs:
             tar -xz -C /tmp -f /tmp/docker-$VER.tgz
             mv /tmp/docker/* /usr/bin
 
-      - run: yarn ci:docker
+      - run: npm ci:docker
