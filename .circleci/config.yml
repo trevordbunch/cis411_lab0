@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  docker: circleci/docker@1.7.0
+
 jobs:
   build:
     docker:
@@ -7,15 +10,17 @@ jobs:
 
     steps:
       - checkout
-
       - run:
           name: Install Dependencies
           command: npm install
-
       - run:
           name: Run Tests
           command: npm test
-
       - run:
           name: Hello World Test
           command: echo "Hello World"
+      - docker/build:
+          debug: false 
+          lint-dockerfile: false 
+          treat-warnings-as-errors: false 
+          image: extra_credit_2 
