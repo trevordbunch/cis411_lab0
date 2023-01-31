@@ -185,5 +185,10 @@ _Remember to reference at least one other student in the PR content via their Gi
 # Step 8: [EXTRA CREDIT] Augment the core project
 PR reference in the report to one of the following:
 1. Add one or more unit tests to the core assignment project. 
+
+With a little help from my good friend chatGPT, I was able to finally get the syntax right to run the NPM tests along with echo'ing "hello world"
+![Hello World Unit Test](/assets/step_8_p1_hw.png)
+
+
 2. Configure the CircleCI config.yml to automatically build a Docker image of the project.
 3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance.
