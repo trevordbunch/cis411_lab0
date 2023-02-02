@@ -17,8 +17,9 @@ jobs:
           command: yarn run test
           name: Run tests
   build:
-    - docker/build:
-        image: "lab1"
+    steps:
+      - docker/build:
+          image: "lab1"
 
 
 # Invoke jobs via workflows
