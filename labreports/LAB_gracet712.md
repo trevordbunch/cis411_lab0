@@ -9,7 +9,9 @@ ___
 
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/gracet712/cis411_lab1_CI
-- The accompanying diagram of what my fork precisely and conceptually represents...
+
+- The accompanying diagram of what my fork precisely and conceptually represents:
+
 ![Diagram of Forked Repository](/assets/fork_diagram.jpg)
 
 # Step 2: Clone your forked repository from the command line  
@@ -77,14 +79,8 @@ ce1fcea circleci default config
 44ce6ae Initial commit
 ```
 
-```
-[labreport c3c3e82] Lab 1 first commit creating LAB_gracet712.md @trevordbunch
- 3 files changed, 612 insertions(+), 1 deletion(-)
- create mode 100644 assets/fork_diagram.jpg
- create mode 100644 labreports/LAB_gracet712.md
+- The accompanying diagram of what my feature branch precisely and conceptually represents:
 
- ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents...
 ![Main vs. Feature Branch](/assets/main_vs_feature_branch.jpg)
 
 # Step 5: Setup a Continuous Integration configuration
