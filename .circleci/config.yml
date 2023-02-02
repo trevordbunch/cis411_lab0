@@ -11,18 +11,10 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: npm
-      - run:
-          name: Install dependencies
-          command: |
-          npm install graphql
-          npm install express
-          npm install graphql
-          npm install lokijs
-          npm install uuid
+          pkg-manager: yarn
 
       - run:
-          command: npm run test
+          command: yarn run test
           name: Run tests
   build:
     docker:
