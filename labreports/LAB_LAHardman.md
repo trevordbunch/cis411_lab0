@@ -3,7 +3,7 @@ ___
 **Course:** CIS 411, Spring 2021  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
 **Name:** Luke Hardman  
-**GitHub Handle:** LAHardman  
+**GitHub Handle:** [LAHardman](https://github.com/LAHardman)  
 **Repository:** https://github.com/LAHardman/cis411_lab1_CI  
 ___
 
@@ -63,15 +63,21 @@ dbf826a Answer Step 4
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
 
+  The .circleci/config.yml file tells circleci tests to run on the repository before execution. You can a workload with different jobs that detail the applications and there versions you are testing for. The config.yml file in this repository executes a test for node.
+
+![CircleCI Diagram](../assets/circleci_diagram.png)
 
 - What do the various sections on the config file do?  
-   
+
+  The version sections of the config file specifiy what version of the applications you want to test the code for.
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+
+  
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
    
+  
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
