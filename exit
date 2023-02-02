@@ -1,0 +1,45 @@
+[33m44a5796[m[33m ([m[1;36mHEAD -> [m[1;32mlabreport[m[33m, [m[1;31morigin/labreport[m[33m)[m Finished step 1, with diagram added
+[33m12ff5eb[m created lab report based on template from @trevorbunch
+[33m94babae[m[33m ([m[1;31morigin/purelab[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mpurelab[m[33m)[m Merge pull request #59 from JeffSinsel/purelab
+[33m2e92bd8[m Fixed typos and links in markdown files
+[33mfa4fc85[m Update Instructions
+[33mf8513e0[m Update Node links to Instructions
+[33md4f22eb[m Update repo branch names
+[33m0e3ae4c[m Reset purelab
+[33m050b420[m Merge pull request #2 from trevordbunch/main
+[33m1fe415c[m Merge pull request #1 from trevordbunch/labreport
+[33m13e571f[m Update Lab readme, instructions and templates
+[33meafe253[m Adjust submitting instructions
+[33m47e83cd[m Add images to LabReport
+[33mec18770[m Add Images
+[33mdbf826a[m Answer Step 4
+[33ma9c1de6[m Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
+[33m1ead543[m remove LAB.md
+[33m8c38613[m Initial commit of labreport with @tangollama
+[33mdabceca[m Merge pull request #24 from tangollama/circleci
+[33ma4096db[m Create README.md
+[33m2f01bf4[m Update LAB_INSTRUCTIONS.md
+[33m347bd50[m Update LAB_INSTRUCTIONS.md
+[33m7aaa9f3[m Update LAB_INSTRUCTIONS.md
+[33m37393ae[m Bug fixed
+[33m1949d2a[m Update LAB_INSTRUCTIONS.md
+[33md36ad90[m Update LAB.md
+[33m59ef18a[m Update LAB_INSTRUCTIONS.md
+[33m37be3c8[m Update LAB_INSTRUCTIONS.md
+[33m97da547[m Update LAB.md
+[33m0bd6244[m updated Step 0 title
+[33m4562cd8[m added npm and node install repreq
+[33m255051e[m adding template
+[33m13a09b7[m Adding the LAB.md and correcting some instructions.
+[33md2ddea5[m Version 0.0.1 of the lab isntructions
+[33mab312fc[m more progress
+[33m62fb0a5[m more progress
+[33mfe1937b[m more in the lab instructions
+[33m3e807fb[m first section
+[33m9ae6b83[m remove LAB.md
+[33me429c1a[m lab instructions
+[33mce1fcea[m circleci default config
+[33m80bbdbb[m circleci default config
+[33m968099e[m remove test db
+[33m7362cd1[m working
+[33m44ce6ae[m Initial commit

@@ -10,11 +10,14 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/LAHardman/cis411_lab1_CI
 - The accompanying diagram of what my fork precisely and conceptually represents...
+
 ![Fork Diagram](../assets/fork_relational_diagram.png)
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is...
-- The command to navigate to the directory when I open up the command line is...
+`C:\Users\lhard\Documents\GitHub\cis411_lab1_CI`
+- The command to navigate to the directory when I open up the command line is...  
+`cd C:\Users\lhard\OneDrive\Documents\GitHub\cis411_lab1_CI`
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
@@ -22,9 +25,9 @@ ___
 {
   "data": {
     "mutateAccount": {
-      "id": "5c345bb5-0c54-44ae-8e57-f5f00b0eddbb",
-      "name": "TREVOR BUNCH",
-      "email": "tbunch@messiah.edu"
+      "id": "d95af70a-79d5-4578-ac48-c2939d849d33",
+      "name": "Luke Hardman",
+      "email": "lh1392@messiah.edu"
     }
   }
 }
@@ -33,9 +36,29 @@ ___
 # Step 4: Creating a feature branch
 - The output of my git commit log
 ```
-Insert the logs here.
+GitHub\cis411_lab1_CI>git log --oneline
+44a5796 (HEAD -> labreport, origin/labreport) Finished step 1, with diagram added
+12ff5eb created lab report based on template from @trevorbunch
+94babae (origin/purelab, origin/HEAD, purelab) Merge pull request #59 from JeffSinsel/purelab
+2e92bd8 Fixed typos and links in markdown files
+fa4fc85 Update Instructions
+f8513e0 Update Node links to Instructions
+d4f22eb Update repo branch names
+0e3ae4c Reset purelab
+050b420 Merge pull request #2 from trevordbunch/main
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
+...
+44ce6ae Initial commit
+(END)
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
+
+![Branch Diagram](../assets/branch_relational_diagram.png)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
@@ -53,16 +76,7 @@ Insert the logs here.
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
-a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
-1ead543 remove LAB.md
-8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
-a4096db Create README.md
-...
-44ce6ae Initial commit
-(END)
+
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
