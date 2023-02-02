@@ -18,7 +18,7 @@ jobs:
           name: Run tests
   build:
     - docker/publish:
-        image: "cis411_lab1_CI"
+        image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
         update-description: true
 
 
