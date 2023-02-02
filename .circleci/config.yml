@@ -14,14 +14,9 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-      - run:
-          name: "Run tests"
-          command: npm test
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -29,4 +24,3 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - run-tests
