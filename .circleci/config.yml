@@ -17,12 +17,12 @@ jobs:
           command: yarn run test
           name: Run tests
   build:
-    executor: docker/docker
+    working_directory: ~/app
+    docker:
+      - image: docker:17.05.0-ce-git
     steps:
       - checkout
-      - run: sudo dockerd
-      - docker/build:
-          image: my_repo/orb-test
+      - setup_remote_docker
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
