@@ -23,7 +23,7 @@ jobs:
       - checkout  
       - docker/check
       - docker/build:
-          image: $DOCKER_LOGIN/$[lower(CIRCLE_PROJECT_REPONAME)]
+          image: $DOCKER_LOGIN/[lower($CIRCLE_PROJECT_REPONAME)]
           tag: app
 
 
