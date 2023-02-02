@@ -40,7 +40,7 @@ Insert the logs here.
 - What is the .circleci/config.yml doing?  
 
 
-- What do the various sections on the config file do?  
+- What do the various sections of the config file do?  
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
