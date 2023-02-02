@@ -86,21 +86,23 @@ ce1fcea circleci default config
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
 
-The .circleci directory contains the config.yml file. This file basically runs tests to check if new commits to the project have broken any functionality. The default config.yml file just echoes "Hello, World!". In a real project, it would be updated.
+The .circleci directory contains the config.yml file. This file basically runs tests to check if new commits to the project have broken any functionality. The default config.yml file just echoes "Hello, World!". In a real project, it would be updated to contain steps that actually test whether the project remains functional.
 
 - What do the various sections on the config file do? 
 
-"Steps" in this file run certain commands or perform tasks needed to check the project's status. "Jobs" organize these steps to perform tasks, and "workflows" organize these jobs.
+Jobs organize steps that will be performed. The jobs are then called in a workflow. In each job, the execution environment is specified, and then a list of steps is given. Later, workflows are defined as a list of jobs. These workflows are performed when new commits are made and pushed to CircleCI, and it will test whether anything in the commit prevents a workflow from completing successfully.
+
+For instance, in the default config.yml file, the job "say-hello" is defined with an execution environment and steps that include the command "echo Hello, World!". Then the workflows are listed, with the "say-hello-workflow" defined to include one job, "say-hello." This just tests whether this one workflow/job complete successfully.
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?
 
-Practically/precisely, this indicates that all of the steps/jobs/workflows in the config.yml file completed successfully. Philosophically, this means nothing in the latest commit broke any of the project's functionality.
+Practically/precisely, this indicates that all of the steps/jobs/workflows in the config.yml file completed successfully. For instance, in the default config.yml file, it indicates that the workflow "say-hello-workflow" succeeded. Philosophically, this means nothing in the latest commit broke any of the project's functionality. This requires adding jobs to the workflows that actually test the project's functionality.
    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
 
-I would add real tests to the config.yml file, so that it actually tests project functionality.
+I would add real tests to the config.yml file, so that it actually tests project functionality. This would prepare for Continuous Delivery by ensuring that new commits do not break the project. I would then add a workflow/job to automate the project's deployment. 
    
 
 # Step 6: Merging the feature branch
