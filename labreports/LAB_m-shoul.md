@@ -74,20 +74,33 @@ d36ad90 Update LAB.md
 ![Feature Branch](/assets/FeatureBranch.svg)
 
 # Step 5: Setup a Continuous Integration configuration
-- What is the .circleci/config.yml doing?  
+- **What is the .circleci/config.yml doing?**
+  - The  .circleci/config.yml defines how CircleCI builds, tests, and deploys the application. Ths file specifies the version, jobs, steps, amd workflow that make up the CI/CD pipeline. It include what commands to run, what environment to run them in, and the order in which the commands are to be executed.
 
 
-- What do the various sections on the config file do?  
+- **What do the various sections on the config file do?**
+1. **[version:](https://circleci.com/docs/configuration-reference/#version)**  Defines the latest version of the CircleCI pipeline process engine. The version field is intended to be used in order to issue warnings for depreciation or breaking changes.
+
+2. **[jobs:](https://circleci.com/docs/configuration-reference/#jobs)** Jobs are named sets of steps that are run in a specific environment and executed in parallel.
    
+3. **[docker:](https://circleci.com/docs/configuration-reference/#docker)** Defines the environment in which the application will run. Docker is used for packaging and deploying applications in containers. Docker is also used for running jobs and steps.
+ 
+4. **[steps:](https://circleci.com/docs/configuration-reference/#steps)** Steps are a unit of work executed during the workflow. Each step consists of one or more commands run in a specific environment. Steps can run tasks like check code, build a project, or run tests.
+  
+5. **[workflows:](https://circleci.com/docs/configuration-reference/#workflows)** Used to define a collection of jobs and run them in order. Workflows can be used to run and troubleshoot jobs independently.
 
-- When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+- **When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?**  
+  - Philosophically this indicates that the practices used by the team to integrate code into an application is effective and functional.
+  - Practically this indicates the build has been run successfully without any errors and that the application has been built successfully.
+  - Precisely this indicates that all tests have passed and that the integration and build of the application was a success.
 
-- If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   
+- **If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?**  
+  - If I were to ready this project for continuous delivery, I would add some type of documentation notes into the configuration to provide written information of what was changed each delivery cycle. I would also add some type of process to check the quality of the code before it is deployed to prevent committing bugs into the live environment.
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
+### NEED TO DO THIS
+
 ```
 Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
 dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
@@ -102,6 +115,7 @@ a4096db Create README.md
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
+### NEED TO DO THIS
 ![CircleCI Success](../assets/circleci_success.png)
 
 # Step 7: Submitting a Pull Request
