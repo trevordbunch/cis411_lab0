@@ -11,12 +11,9 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: npm
+          pkg-manager: yarn
       - run:
-          name: install dependencies 
-          command: npm install --force
-      - run:
-          command: npm run test
+          command: yarn run test
           name: Run tests
   build:
     docker:
