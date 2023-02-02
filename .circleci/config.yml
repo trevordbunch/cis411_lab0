@@ -16,11 +16,12 @@ jobs:
       - run:
           command: yarn run test
           name: Run tests
-  # build:
-  #   steps:
-  #     - checkout
-  #     - docker:
-  #         image: cimg/19.5.0
+  build:
+    docker:
+      - image: cimg/node:19.5.0
+    steps:
+      - checkout
+      - run: docker --version
 
 
 # Invoke jobs via workflows
@@ -29,4 +30,4 @@ workflows:
   say-hello-workflow:
     jobs:
       - test
-      # - build
+      - build
