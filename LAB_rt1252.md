@@ -192,6 +192,8 @@ With a little help from my good friend chatGPT, I was able to finally get the sy
 
 2. Configure the CircleCI config.yml to automatically build a Docker image of the project.
 
+Using the help of [this video](https://www.youtube.com/watch?v=kanCgiBCbhU&t=345s&ab_channel=BenAwad) I was a little more successful than I would have been on my own. 
+
 I tried for a bit to build a docker image and was partially successful. Please see the config.yaml file and the screenshots below.
 
 ![Container redis:latest](/assets/ec_2_2.png)
