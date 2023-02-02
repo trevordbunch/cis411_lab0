@@ -42,14 +42,22 @@ jobs:
           command: |
             mkdir -p /caches
             docker save -o /caches/app.tar app
-      # - save_cache:
-      #     key: v1-{{ .Branch }}-{{ epoch }}
-      #     paths:
-      #       - /caches/app.tar
+      - save_cache:
+          key: v1-{{ .Branch }}-{{ epoch }}
+          paths:
+            - /caches/app.tar
       - run:
-          name: Push Docker image
-          command: |
-            docker push jeffsinsel/lab1
+          name: Echo location
+          command: echo $0
+      # - deploy:
+      #     name: Push application Docker image
+      #     command: |
+      #       if [ "${CIRCLE_BRANCH}" == "master" ]; then
+      #         login="$(aws ecr get-login)"
+      #         ${login}
+      #         docker tag app "${ECR_ENDPOINT}/app:${CIRCLE_SHA1}"
+      #         docker push "${ECR_ENDPOINT}/app:${CIRCLE_SHA1}"
+      #       fi
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
