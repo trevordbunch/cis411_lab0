@@ -27,4 +27,4 @@ RUN curl -L -o yarn.tar.gz "https://yarnpkg.com/downloads/${YARN_VERSION}/yarn-v
 
 # Install an alternative, but growing in popularity Node.js package manager
 RUN sudo npm install -g pnpm
-RUN node server.js
+RUN node cis411_lab1_CI\server.js
