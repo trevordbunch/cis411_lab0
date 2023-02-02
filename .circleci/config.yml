@@ -11,13 +11,13 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-        pkg-manager: npm
+          pkg-manager: npm
       - run:
-        name: install dependencies 
-        command: npm install --force
+          name: install dependencies 
+          command: npm install --force
       - run:
-        command: npm run test
-        name: Run tests
+          command: npm run test
+          name: Run tests
   build:
     docker:
       - image: cimg/node:19.5.0
