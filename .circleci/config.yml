@@ -18,7 +18,7 @@ jobs:
           name: Run tests
   build:
     docker:
-      - image: cimg/node:19.5.o
+      - image: cimg/node:19.5.0
     steps:
       - checkout
       - run:
