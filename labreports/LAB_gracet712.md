@@ -15,8 +15,8 @@ ___
 ![Diagram of Forked Repository](/assets/fork_diagram.jpg)
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is: /"Messiah University"/Schoolwork/"Semester 4"/"CIS 411"/"CIS Labs"/cis411_lab1_CI
-- The command to navigate to the directory when I open up the command line is: cd /"Messiah University"/Schoolwork/"Semester 4"/"CIS 411"/"CIS Labs"/cis411_lab1_CI
+- My local file directory is: /"Messiah University"/Schoolwork/"Semester 4"/"CIS 411"/"CIS 411 Labs"/cis411_lab1_CI
+- The command to navigate to the directory when I open up the command line is: cd /"Messiah University"/Schoolwork/"Semester 4"/"CIS 411"/"CIS 411 Labs"/cis411_lab1_CI
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project.
