@@ -17,9 +17,9 @@ jobs:
           command: yarn run test
           name: Run tests
   build:
-    - checkout
     - docker/publish:
         image: "JeffSinsel/cis411_lab1_CI"
+        update-description: true
 
 
 # Invoke jobs via workflows
