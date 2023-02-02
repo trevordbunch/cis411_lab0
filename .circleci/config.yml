@@ -17,13 +17,11 @@ jobs:
           command: yarn run test
           name: Run tests
   build:
-    docker:
-      - image: circleci/node:14
+    executor: docker/docker
     steps:
       - checkout
-      - run:
-          name: Build Docker Image
-          command: docker build -t lab1 .
+      - docker/build:
+          image: my_repo/orb-test
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
