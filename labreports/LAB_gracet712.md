@@ -86,14 +86,21 @@ ce1fcea circleci default config
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
 
+The .circleci directory contains the config.yml file. This file basically runs tests to check if new commits to the project have broken any functionality. The default config.yml file just echoes "Hello, World!". In a real project, it would be updated.
 
-- What do the various sections on the config file do?  
+- What do the various sections on the config file do? 
+
+"Steps" in this file run certain commands or perform tasks needed to check the project's status. "Jobs" organize these steps to perform tasks, and "workflows" organize these jobs.
    
 
-- When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
+- When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?
+
+Practically/precisely, this indicates that all of the steps/jobs/workflows in the config.yml file completed successfully. Philosophically, this means nothing in the latest commit broke any of the project's functionality.
    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+
+I would add real tests to the config.yml file, so that it actually tests project functionality.
    
 
 # Step 6: Merging the feature branch
