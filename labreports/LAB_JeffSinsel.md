@@ -12,8 +12,8 @@ ___
 - The accompanying diagram of what my fork precisely and conceptually represents...
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is...
-- The command to navigate to the directory when I open up the command line is...
+- My local file directory is ```C:\Users\Jeff\Desktop\Python\GitHub\labreports\cis411_lab1_CI```
+- The command to navigate to the directory when I open up the command line is ```cd desktop/python/github/labreports/cis411_lab1_ci```
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
@@ -30,9 +30,54 @@ ___
 ```
 
 # Step 4: Creating a feature branch
-- The output of my git commit log
+- The output of my git commit log  
+_I accidentally added a third branch when setting up circleci so I ended merging the circleci-project-setup to the labreport branch to fix everything_
 ```
-Insert the logs here.
+255fcbd (HEAD -> labreport, origin/labreport) Merge pull request #1 from JeffSinsel/circleci-project-setup
+f3662be Add .circleci/config.yml
+0d7e5e7 first commit @trevordbunch
+2e92bd8 (origin/purelab, origin/HEAD, purelab) Fixed typos and links in markdown files
+fa4fc85 (github-desktop-christianreames/purelab) Update Instructions
+f8513e0 Update Node links to Instructions
+d4f22eb Update repo branch names
+0e3ae4c Reset purelab
+050b420 Merge pull request #2 from trevordbunch/main
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
+a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
+1ead543 remove LAB.md
+8c38613 Initial commit of labreport with @tangollama
+dabceca Merge pull request #24 from tangollama/circleci
+a4096db Create README.md
+2f01bf4 Update LAB_INSTRUCTIONS.md
+347bd50 Update LAB_INSTRUCTIONS.md
+7aaa9f3 Update LAB_INSTRUCTIONS.md
+37393ae Bug fixed
+1949d2a Update LAB_INSTRUCTIONS.md
+d36ad90 Update LAB.md
+59ef18a Update LAB_INSTRUCTIONS.md
+37be3c8 Update LAB_INSTRUCTIONS.md
+97da547 Update LAB.md
+0bd6244 updated Step 0 title
+4562cd8 added npm and node install repreq
+255051e adding template
+13a09b7 Adding the LAB.md and correcting some instructions.
+d2ddea5 Version 0.0.1 of the lab isntructions
+ab312fc more progress
+62fb0a5 more progress
+fe1937b more in the lab instructions
+3e807fb first section
+9ae6b83 remove LAB.md
+e429c1a lab instructions
+ce1fcea circleci default config
+80bbdbb circleci default config
+968099e remove test db
+7362cd1 working
+44ce6ae Initial commit
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
 
@@ -65,7 +110,7 @@ a4096db Create README.md
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+![CircleCI Success](../assets/circleci_success_jeff.png)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
