@@ -21,8 +21,6 @@ jobs:
       - checkout
       - docker:
           image: cimg/19.5.0
-      - docker/publish:
-          image: "lab1"
 
 
 # Invoke jobs via workflows
