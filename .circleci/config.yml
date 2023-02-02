@@ -22,7 +22,7 @@ jobs:
       - checkout
       - run:
           name: Build Docker Image
-          command: docker build -t lab1 cis411_lab1_CI\Dockerfile
+          command: docker build -t lab1 cis411_lab1_CI/Dockerfile
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
