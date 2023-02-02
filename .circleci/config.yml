@@ -51,14 +51,14 @@ jobs:
           command: |
             mkdir -p /caches
             docker save -o /caches/app.tar jeffsinsel/lab1:app
-      - save_cache:
-          key: v1-{{ .Branch }}-{{ epoch }}
-          paths:
-            - /caches/app.tar
+      # - save_cache:
+      #     key: v1-{{ .Branch }}-{{ epoch }}
+      #     paths:
+      #       - /caches/app.tar
       - deploy:
           name: Push application Docker image
           command: |
-            docker login -u DOCKERHUB_USERNAME -p DOCKERHUB_PASSWORD docker.io
+            docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD docker.io
             docker push jeffsinsel/lab1:app
 
 
