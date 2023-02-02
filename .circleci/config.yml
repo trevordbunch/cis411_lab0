@@ -22,6 +22,8 @@ jobs:
       - checkout
       - setup_remote_docker
       - docker/check
+          docker-password: $DOCKERHUB_PASSWORD
+          docker-username: $DOCKERHUB_USERNAME
       # - docker/build:
       #     image: lab1/orbtest
 
