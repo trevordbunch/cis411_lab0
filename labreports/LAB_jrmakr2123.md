@@ -8,7 +8,7 @@ ___
 ___
 
 # Step 1: Fork this repository
-- The URL of my forked repository: ENTER URL HERE
+- The URL of my forked repository: https://github.com/jrmakr2123/cis411_lab1_CI
 - The accompanying diagram of what my fork precisely and conceptually represents...
 
 # Step 2: Clone your forked repository from the command line  
@@ -16,14 +16,13 @@ ___
 - The command to navigate to the directory when I open up the command line is...
 
 # Step 3: Run the application locally
-- My GraphQL response from adding myself as an account on the test project
 ``` json
 {
   "data": {
     "mutateAccount": {
-      "id": "5c345bb5-0c54-44ae-8e57-f5f00b0eddbb",
-      "name": "TREVOR BUNCH",
-      "email": "tbunch@messiah.edu"
+      "id": "0446a38f-4ea1-41fd-9c44-05c7c32b829b",
+      "name": "Jonah Robinson",
+      "email": "jr1521@messiah.edu"
     }
   }
 }
@@ -44,6 +43,7 @@ Insert the logs here.
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
+  - When the CI build is successful, the code that is being tested is correct based on our tests. In reality, our code may not be able to work the way we need it to. However, our code being able to compile and pass our tests proves our code is compatible with our testing criteria and is able to pass it. 
    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
@@ -71,9 +71,9 @@ a4096db Create README.md
 _Remember to reference at least one other student in the PR content via their GitHub handle._
 
 
-
+<!-- 
 # Step 8: [EXTRA CREDIT] Augment the core project
 PR reference in the report to one of the following:
 1. Add one or more unit tests to the core assignment project. 
 2. Configure the CircleCI config.yml to automatically build a Docker image of the project.
-3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance.
+3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance. -->
