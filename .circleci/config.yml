@@ -22,9 +22,7 @@ jobs:
       - checkout
       - run:
           name: Build Docker Image
-          command: |
-            systemctl start docker
-            docker build -t lab1 https://raw.githubusercontent.com/CircleCI-Public/cimg-node/main/19.5/Dockerfile
+          command: docker build -t lab1 .
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
