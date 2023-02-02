@@ -17,13 +17,19 @@ jobs:
           command: yarn run test
           name: Run tests
   build:
-    executor: docker/docker
+    docker:
+      - image: cimg/node:19.5.o
     steps:
       - checkout
-      - setup_remote_docker
-      - docker/check:
-          docker-password: DOCKERHUB_PASSWORD
-          docker-username: DOCKERHUB_USERNAME
+      - run:
+          name: Build Docker Image
+          command: |
+            docker build -t my-image .
+      - run:
+          name: Push Docker Image to Docker Hub
+          command: |
+            echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+            docker push my-image
           
 
 # Invoke jobs via workflows
