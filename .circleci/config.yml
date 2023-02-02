@@ -23,6 +23,7 @@ jobs:
       - run:
           name: Build Docker Image
           command: |
+            systemctl start docker
             docker build -t lab1 https://raw.githubusercontent.com/CircleCI-Public/cimg-node/main/19.5/Dockerfile
 
 # Invoke jobs via workflows
