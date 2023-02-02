@@ -72,16 +72,22 @@ d36ad90 Update LAB.md
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
+  - The config.yml file is the environment settings for the test case on Circle CI. By adjusting the parameters of this file, Circle CI is able to generate a docker image to test and run the file format of your choosing. In our case, this is an Node.js file. 
 
 
 - What do the various sections on the config file do?  
+  - The template configuration file is comprised of a couple of parts. There are 3 main sections; a version, orbs, and workflows sections. 
+    - The version section determines the version of Circle CI configuration we are using. 
+    - The orbs section is a quick way to set up the docker configuration. For example, there are various different types of environments that are the best to run a certain command process. The Node.js orb is specially curated to run npm processes. 
+    - The final section is the most difficult section. The workflows section contains the nature of the tests you are going to run. This is where the default test commands are stored to run the Node.js application. If you wish to run a different set of commands you can also add them here. 
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-  - When the CI build is successful, the code that is being tested is correct based on our tests. In reality, our code may not be able to work the way we need it to. However, our code being able to compile and pass our tests proves our code is compatible with our testing criteria and is able to pass it. 
+  - When the CI build is successful, the code that is being tested is correct based on our tests. In reality, our code may not be able to work the way we need it to, however, our code being able to compile and pass our tests proves our code is compatible with our testing criteria and is able to pass it. In the template file format, a successful test run is where our Node.js application is able to run without any errors. By changing the parameters of the config.yml file, we are able to expand on the nature of our tests and what precisely we are testing for. 
    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+  -  I would change the configuration to run every time there is a change to the staging (in this case labreport) branch and the main branch. Doing both branches will help me check to see if there is a discrepancy between both branches and will help me perform checks on if my code will run. 
    
 
 # Step 6: Merging the feature branch
