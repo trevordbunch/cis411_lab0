@@ -13,6 +13,15 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run:
+          name: Install dependencies
+          command: |
+          npm install graphql
+          npm install express
+          npm install graphql
+          npm install lokijs
+          npm install uuid
+
+      - run:
           command: npm run test
           name: Run tests
   build:
