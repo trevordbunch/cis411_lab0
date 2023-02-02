@@ -17,9 +17,8 @@ jobs:
           command: yarn run test
           name: Run tests
   build:
-    - docker/publish:
-        image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
-        update-description: true
+    - docker/build:
+        image: "lab1"
 
 
 # Invoke jobs via workflows
