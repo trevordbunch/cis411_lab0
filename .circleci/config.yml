@@ -19,6 +19,9 @@ jobs:
   build:
     docker:
       - image: cimg/node:19.5.0
+    docker/publish:
+      - image: "lab1"
+
     steps:
       - checkout
       - run: docker --version
