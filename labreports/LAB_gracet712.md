@@ -85,6 +85,7 @@ ce1fcea circleci default config
 
  ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
+![Main vs. Feature Branch](/assets/main_vs_feature_branch.jpg)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
