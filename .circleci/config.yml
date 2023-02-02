@@ -26,6 +26,7 @@ jobs:
       - checkout
       - run:
           command: "npm install -g npm"
+      - run:
           command: "npm start"
 
 # Invoke jobs via workflows
