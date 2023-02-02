@@ -18,7 +18,10 @@ jobs:
           name: Run tests
   build:
     steps:
-      - docker/build:
+      - checkout
+      - docker:
+          image: cimg/19.5.0
+      - docker/publish:
           image: "lab1"
 
 
