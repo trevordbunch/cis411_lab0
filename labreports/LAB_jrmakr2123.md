@@ -87,7 +87,7 @@ d36ad90 Update LAB.md
    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-  -  I would change the configuration to run every time there is a change to the staging (in this case labreport) branch and the main branch. Doing both branches will help me check to see if there is a discrepancy between both branches and will help me perform checks on if my code will run. 
+  -  I would change the configuration to run every time there is a change to the staging (in this case labreport) branch and the main branch. Doing both branches will help me check to see if there is a discrepancy between both branches and will help me perform checks on if my code will run. I would also implement a log file system. When Circle CI runs, a file in the appropriate branch would be updated to show the actual test and their boolean value. This file would be ignored in push and pull requests thus only staying in its appropriate branch. 
    
 
 # Step 6: Merging the feature branch
