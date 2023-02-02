@@ -191,4 +191,9 @@ With a little help from my good friend chatGPT, I was able to finally get the sy
 
 
 2. Configure the CircleCI config.yml to automatically build a Docker image of the project.
-3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance.
+
+I tried for a bit to build a docker image and was partially successful. Please see the config.yaml file and the screenshots below.
+
+![Container redis:latest](/assets/ec_2_2.png)
+![Build results](/assets/ec_2.png)
+ 3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance.
