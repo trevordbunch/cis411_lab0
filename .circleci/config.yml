@@ -20,12 +20,8 @@ jobs:
     executor: docker/docker
     steps:
       - checkout
-      - setup_remote_docker
-      - docker/check:
-          docker-password: DOCKERHUB_PASSWORD
-          docker-username: DOCKERHUB_USERNAME
-      # - docker/build:
-      #     image: lab1/orbtest
+      - docker/build:
+          image: lab1/orbtest
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
