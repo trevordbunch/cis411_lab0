@@ -18,7 +18,7 @@ jobs:
           name: Run tests
   build:
     - docker/publish:
-        image: "JeffSinsel/cis411_lab1_CI"
+        image: "cis411_lab1_CI"
         update-description: true
 
 
