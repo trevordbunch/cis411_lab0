@@ -11,11 +11,13 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: yarn
-
+        pkg-manager: npm
       - run:
-          command: yarn run test
-          name: Run tests
+        name: install dependencies 
+        command: npm install --force
+      - run:
+        command: npm run test
+        name: Run tests
   build:
     docker:
       - image: cimg/node:19.5.0
