@@ -17,7 +17,7 @@ jobs:
           command: yarn run test
           name: Run tests
   build:
-    working-directory: ~/cis411_lab1_ci
+    working_directory: ~/cis411_lab1_ci
     executor: docker/machine
     steps:
       - checkout 
