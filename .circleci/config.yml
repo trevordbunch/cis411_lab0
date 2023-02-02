@@ -59,6 +59,7 @@ jobs:
           name: Push application Docker image
           command: |
             if [ "${CIRCLE_BRANCH}" == "unittests" ]; then
+              aws configure set region us-east-1
               login="$(aws ecr get-login)"
               ${login}
               docker tag app "${ECR_ENDPOINT}/app:${CIRCLE_SHA1}"
