@@ -28,6 +28,7 @@ jobs:
           tag: app
       - docker/push:
           image: $DOCKER_LOGIN/lab1
+          tag: app
 
 
 # Invoke jobs via workflows
