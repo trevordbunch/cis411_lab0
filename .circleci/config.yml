@@ -20,6 +20,7 @@ jobs:
     executor: docker/docker
     steps:
       - checkout
+      - run: sudo dockerd
       - docker/build:
           image: my_repo/orb-test
 
