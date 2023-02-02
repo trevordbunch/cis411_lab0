@@ -58,7 +58,7 @@ jobs:
       - deploy:
           name: Push application Docker image
           command: |
-            docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD docker.io
+            docker login -u ${DOCKERHUB_USERNAME} -p ${DOCKERHUB_PASSWORD} docker.io
             docker push jeffsinsel/lab1:app
 
 
