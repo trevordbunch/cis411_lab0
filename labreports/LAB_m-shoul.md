@@ -75,19 +75,27 @@ d36ad90 Update LAB.md
 
 # Step 5: Setup a Continuous Integration configuration
 - **What is the .circleci/config.yml doing?**
-  - The  .circleci/config.yml defines how CircleCI builds, tests, and deploys the application. Ths file specifies the version, jobs, steps, amd workflow that make up the CI/CD pipeline. It include what commands to run, what environment to run them in, and the order in which the commands are to be executed.
-
+  - The  ```.circleci/config.yml``` defines how CircleCI builds, tests, and deploys the application. Ths file specifies the version, jobs, steps, amd workflow that make up the CI/CD pipeline. It include what commands to run, what environment to run them in, and the order in which the commands are to be executed.
 
 - **What do the various sections on the config file do?**
-1. **[version:](https://circleci.com/docs/configuration-reference/#version)**  Defines the latest version of the CircleCI pipeline process engine. The version field is intended to be used in order to issue warnings for depreciation or breaking changes.
-
-2. **[jobs:](https://circleci.com/docs/configuration-reference/#jobs)** Jobs are named sets of steps that are run in a specific environment and executed in parallel.
-   
-3. **[docker:](https://circleci.com/docs/configuration-reference/#docker)** Defines the environment in which the application will run. Docker is used for packaging and deploying applications in containers. Docker is also used for running jobs and steps.
- 
-4. **[steps:](https://circleci.com/docs/configuration-reference/#steps)** Steps are a unit of work executed during the workflow. Each step consists of one or more commands run in a specific environment. Steps can run tasks like check code, build a project, or run tests.
   
-5. **[workflows:](https://circleci.com/docs/configuration-reference/#workflows)** Used to define a collection of jobs and run them in order. Workflows can be used to run and troubleshoot jobs independently.
+1. **version:**  Defines the latest version of the CircleCI pipeline process engine. The version field is intended to be used in order to issue warnings for depreciation or breaking changes.
+   
+2. **orbs:** Reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
+   
+3. **node:** The node in the `orbs` section refers to the version of Node.js language runtime environment. This ensures the code is running consistently across different environments and reduces the risk of compatibility issues.
+   
+4. **workflows:** Used to define a collection of jobs and run them in order. Workflows can be used to run and troubleshoot jobs independently.
+   
+5. **sample:** `sample` represents the name of the workflow in the config file, and this can be altered to better match the workflow.
+
+6. **jobs:** Jobs are named sets of steps that are run in a specific environment and executed in parallel.
+   
+7. **node/test:** This part refers to a step that runs tests on a Node.js application to validate the functionality and quality of the code before it is deployed.
+   
+8. **version:** "version" inside the workflow section represents the node version to use for the `cimg-node` tag. `cimg-node` is a Docker image created by CircleCI with continuous integration builds in mind.
+ 
+9.  **pkg-manager:** This is a took used to manage the dependencies of a project. This is making sure that I have `npm` installed and available before the test runs.
 
 - **When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?**  
   - Philosophically this indicates that the practices used by the team to integrate code into an application is effective and functional.
