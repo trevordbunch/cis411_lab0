@@ -95,7 +95,8 @@ ce1fcea circleci default config
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+
+When a CI build is successful, this means that the build is meets the    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
    
@@ -156,7 +157,7 @@ d36ad90 Update LAB.md
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/jobsproofForbunch.png)
+![CircleCI Success](../assets/jobsproofForbunch.PNG)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
