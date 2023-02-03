@@ -28,7 +28,7 @@ jobs:
           image: ${DOCKER_LOGIN}/lab1
           tag: latest
       - aws-ecs/run-task:
-          docker-image-for-job: ${DOCKER_LOGIN}/lab1:latest
+          image: ${DOCKER_LOGIN}/lab1:latest
           profile-name: test
           awsvpc: false
           cluster: cluster1
