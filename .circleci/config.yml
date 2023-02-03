@@ -28,7 +28,6 @@ jobs:
           image: ${DOCKER_LOGIN}/lab1
           tag: latest
       - aws-ecs/run-task:
-          image: ${DOCKER_LOGIN}/lab1:latest
           profile-name: test
           awsvpc: false
           cluster: cluster1
