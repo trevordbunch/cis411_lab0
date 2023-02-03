@@ -11,12 +11,19 @@ orbs:
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+jobs:
+  flutter-install:
+    docker:
+      - image: docker_image
+    steps:
+      - flutter/install_sdk_and_pub
 workflows:
   example-workflow:
       jobs:
-      - flutter/unit_test
       - docker/publish:
           image: docker_image 
+      - flutter-install
+      - flutter/unit_test
       - node/test:
           # This is the node version to use for the `cimg/node` tag
           # Relevant tags can be found on the CircleCI Developer Hub
@@ -24,8 +31,3 @@ workflows:
           version: '16.10'
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
-      - aws-ecs/run-task:
-          awsvpc: false
-          cluster: cluster1
-          launch-type: EC2
-          task-definition: myapps
