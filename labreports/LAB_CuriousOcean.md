@@ -91,14 +91,16 @@ ce1fcea circleci default config
 
 - What do the various sections on the config file do?  
 
-
+The various sections on the config allow allow the user to do Spin Up the Environment, Preparing environment variables, Checkout code, Checking for package.json, Determine locfile, Restoring cache, Installing NPM packages, Saving cache, and Run NPM Tests.
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
 
-When a CI build is successful, this means that the build is meets the    
+When a CI build is successful, this means that the build is meets the requirements to move foward. Philsophically, it was grown and become the new normal and circleci runs it as a baseline.     
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+
+
    
 
 # Step 6: Merging the feature branch
