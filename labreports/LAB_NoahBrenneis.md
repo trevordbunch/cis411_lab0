@@ -80,20 +80,25 @@ To prepare for Continuous Delivery, additional jobs would have to be added to th
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
-a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
-1ead543 remove LAB.md
-8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
-a4096db Create README.md
+$ git log --oneline
+0b6ae84 (HEAD -> purelab, origin/purelab, origin/HEAD) Merge branch 'labreports' into purelab This merge is to add the lab report into the main branch
+9a5f528 (origin/labreports, labreports) Added diagrams to the lab report and completed steps 1-5
+5669621 Added Fork_Relationship.svg
+06c0d25 Added Branch_Relationship.svg
+b0c973b Update config.yml
+717b8cf Create config.yml
+58a8a8b Added an empty config.yml file for use with circleCI
+15b12f7 Added personal info and the URL to the repository
+5cf7b2e Copied the lab template provided by @trevordbunch
+94babae (upstream/purelab) Merge pull request #59 from JeffSinsel/purelab
+2e92bd8 Fixed typos and links in markdown files
 ...
 44ce6ae Initial commit
 (END)
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+![CircleCI Success](../assets/Jobs_Success.png)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
