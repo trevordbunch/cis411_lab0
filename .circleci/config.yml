@@ -26,6 +26,8 @@ jobs:
       - checkout
       - run:
           command: "sudo apt-get install nodejs npm"
+      -run:
+          command: "npm install express"
       - run:
           command: "npm start"
 
