@@ -35,8 +35,9 @@ jobs:
 
       - run:
           name: "NPM start"
-          command: "npm start"
-          expect: "> node server.js"
+          command: |
+            set -e
+            npm start
           background: true
 
       - run: # Makes sure CircleCI recognizes if 'npm start' encountered an error.
