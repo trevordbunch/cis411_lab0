@@ -46,7 +46,7 @@ jobs:
 
       - run: # Otherwise npm will run forever.
           name: "Stop circleci"
-          circleci-agent step halt
+          command: circleci-agent step halt
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
