@@ -9,17 +9,18 @@ ___
 
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/jrmakr2123/cis411_lab1_CI
-- The accompanying diagram of what my fork precisely and conceptually represents...
+- _The accompanying diagram of what my fork precisely and conceptually represents..._
+  ![Fork Diagram](../assets/github%20fork%20diagram.jpg)
 
 # Step 2: Clone your forked repository from the command line  
 - My directory is located at . . . 
 ```
- ~/'github repo'/CIS411_LAB1_CI
+ ~\github repo\cis411_lab1_CI\
 ```
 - The command to navigate to the directory when I open up the command line is . . . 
  
 ```
-cd ~/'github repo'/CIS411_LAB1_CI
+cd '~\github repo\cis411_lab1_CI\'
 ```
 
 # Step 3: Run the application locally
@@ -68,7 +69,7 @@ d36ad90 Update LAB.md
 59ef18a Update LAB_INSTRUCTIONS.md
 37be3c8 Update LAB_INSTRUCTIONS.md
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents...
+- _The accompanying diagram of what my feature branch precisely and conceptually represents..._
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
@@ -126,11 +127,11 @@ a4096db Create README.md
 (END)
 ```
 
-* This is screenshot of the _Projects_ list in CircleCI
-![CircleCI Success](https://github.com/jrmakr2123/cis411_lab1_CI/blob/labreport/assets/circleci_success.png?raw=true)
+* This is a screenshot of the _Projects_ list in CircleCI
+![CircleCI Success](../assets/circleci_success.png)
 
-# Step 7: Submitting a Pull Request
-_Remember to reference at least one other student in the PR content via their GitHub handle._
+<!-- # Step 7: Submitting a Pull Request
+_Remember to reference at least one other student in the PR content via their GitHub handle._ -->
 
 
 <!-- 
