@@ -11,6 +11,8 @@ ___
 - The URL of my forked repository: https://github.com/CuriousOcean/cis411_lab1_CI/tree/purelab
 - The accompanying diagram of what my fork precisely and conceptually represents...
 
+![CircleCI Success](../assets/CIdiagram1.png)
+
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is...
 
@@ -83,6 +85,8 @@ ce1fcea circleci default config
 (END)
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
+
+![CircleCI Success](../assets/CIdiagram2.png)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
