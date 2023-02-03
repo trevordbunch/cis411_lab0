@@ -87,9 +87,11 @@ ce1fcea circleci default config
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
 
-
+.circleci/config.yml is making a new branch and merges it into a new folder for you to use. 
 
 - What do the various sections on the config file do?  
+
+
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
