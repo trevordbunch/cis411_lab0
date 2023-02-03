@@ -36,9 +36,10 @@ jobs:
       - run:
           name: "NPM start"
           command: "npm start"
+          expect: "> node server.js"
           background: true
 
-      - run:
+      - run: # Makes sure CircleCI recognizes if 'npm start' encountered an error.
           name: "Sleep"
           command: "sleep 5s"
 
