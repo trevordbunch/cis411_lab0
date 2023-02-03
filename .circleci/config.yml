@@ -19,7 +19,7 @@ jobs:
       - run:
           command: yarn run test
           name: Run tests
-  build:
+  build-and-push:
     executor: docker/docker
     steps:
       - setup_remote_docker
@@ -28,15 +28,15 @@ jobs:
       - docker/build:
           image: ${DOCKER_LOGIN}/lab1
           tag: latest
-  deploy:
-      name: Push application Docker image
-      command: |
-        if [ "${CIRCLE_BRANCH}" == "orbBasedImage" ]; then
-          login="$(aws ecr get-login)"
-          ${login}
-          docker tag app "${DOCKER_LOGIN}/app:${CIRCLE_SHA1}"
-          docker push "${DOCKER_LOGIN}/app:${CIRCLE_SHA1}"
-        fi
+      - deploy:
+          name: Push application Docker image
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "orbBasedImage" ]; then
+              login="$(aws ecr get-login)"
+              ${login}
+              docker tag app "${ECR_ENDPOINT}/app:${CIRCLE_SHA1}"
+              docker push "${ECR_ENDPOINT}/app:${CIRCLE_SHA1}"
+            fi
 
 
 
@@ -46,5 +46,4 @@ workflows:
   say-hello-workflow:
     jobs:
       # - test
-      - build
-      - deploy
+      - build-and-push
