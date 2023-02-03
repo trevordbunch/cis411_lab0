@@ -14,7 +14,7 @@ orbs:
 jobs:
   flutter-install:
     docker:
-      - image: docker_image
+      - image: cimg/base:stable
     steps:
       - flutter/install_sdk_and_pub
 workflows:
