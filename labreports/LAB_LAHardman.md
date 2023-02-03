@@ -14,7 +14,7 @@ ___
 ![Fork Diagram](../assets/fork_relational_diagram.png)
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is...
+- My local file directory is...  
 `C:\Users\lhard\Documents\GitHub\cis411_lab1_CI`
 - The command to navigate to the directory when I open up the command line is...  
 `cd C:\Users\lhard\OneDrive\Documents\GitHub\cis411_lab1_CI`
@@ -73,11 +73,11 @@ dbf826a Answer Step 4
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
 
-  
+  A successful CI build means that the code shouldn't break you deployment, though it still may not function exactly how you intend.
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
    
-  
+  I would add additional tests to ensure that everything else functions as intended, so to limit any issues with deployment.
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
