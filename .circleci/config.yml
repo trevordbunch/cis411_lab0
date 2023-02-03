@@ -18,7 +18,7 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
 
-  # This tests whether the project initially starts in the execution environment.
+  # This job tests whether the project initially starts in the execution environment.
   # A better unit test would probably test the functionality of sections of code in server.js,
   # but this seemed like a good starting point.
   unit-test-starting:
