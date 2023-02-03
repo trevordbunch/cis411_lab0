@@ -4,9 +4,6 @@ version: 2.1
 orbs:
   node: circleci/node@5.1.0
   docker: circleci/docker@2.2.0
-  aws-ecr: circleci/aws-ecr@8.1.2 
-  aws-ecs: circleci/aws-ecs@3.2.0 
-  aws-cli: circleci/aws-cli@3.1.1 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
@@ -28,22 +25,17 @@ jobs:
       - docker/build:
           image: ${DOCKER_LOGIN}/lab1
           tag: latest
-      - deploy:
-          name: Push application Docker image
+      - docker/push:
+          digest-path: /tmp/digest.txt
+          image: ${DOCKER_LOGIN}/lab1
+          tag: latest
+      - run:
           command: |
-            if [ "${CIRCLE_BRANCH}" == "orbBasedImage" ]; then
-              login="$(aws ecr get-login)"
-              ${login}
-              docker tag app "${DOCKER_LOGIN}/lab1:latest"
-              docker push "${DOCKER_LOGIN}/lab1:latest"
-            fi
-
-
-
+            echo "Digest is: $(</tmp/digest.txt)"
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   say-hello-workflow:
     jobs:
-      # - test
+      - test
       - build-and-push
