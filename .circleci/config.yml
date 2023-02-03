@@ -24,11 +24,11 @@ jobs:
       - docker/check
       - docker/build:
           image: ${DOCKER_LOGIN}/lab1
-          tag: app
+          tag: latest
       - docker/push:
           digest-path: /tmp/digest.txt
           image: ${DOCKER_LOGIN}/lab1
-          tag: app
+          tag: latest
       - run:
           command: |
             echo "Digest is: $(</tmp/digest.txt)"
