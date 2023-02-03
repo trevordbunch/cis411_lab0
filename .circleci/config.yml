@@ -17,17 +17,20 @@ jobs:
           command: yarn run test
           name: Run tests
   build-and-push:
-    machine:
-      image: ubuntu-2004:202101-01
+    executor: docker/docker
     steps:
-      - checkout  
+      - setup_remote_docker
+      - checkout
       - docker/check
       - docker/build:
-          image: $DOCKER_LOGIN/lab1
-          tag: app
+          image: ${DOCKER_LOGIN}/orb-test
       - docker/push:
-          image: $DOCKER_LOGIN/lab1
-          tag: app
+          digest-path: /tmp/digest.txt
+          image: ${DOCKER_LOGIN}/orb-test
+      - run:
+          command: |
+            echo "Digest is: $(</tmp/digest.txt)"
+
 
 
 # Invoke jobs via workflows
