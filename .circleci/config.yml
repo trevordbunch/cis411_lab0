@@ -23,10 +23,12 @@ jobs:
       - checkout
       - docker/check
       - docker/build:
-          image: ${DOCKER_LOGIN}/orb-test
+          image: ${DOCKER_LOGIN}/lab1
+          tag: app
       - docker/push:
           digest-path: /tmp/digest.txt
-          image: ${DOCKER_LOGIN}/orb-test
+          image: ${DOCKER_LOGIN}/lab1
+          tag: app
       - run:
           command: |
             echo "Digest is: $(</tmp/digest.txt)"
