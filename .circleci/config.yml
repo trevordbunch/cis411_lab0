@@ -25,7 +25,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: "npm install -g npm"
+          command: "sudo apt-get install nodejs npm"
       - run:
           command: "npm start"
 
