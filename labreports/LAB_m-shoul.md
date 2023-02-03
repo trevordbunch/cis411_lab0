@@ -107,7 +107,6 @@ d36ad90 Update LAB.md
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
-### NEED TO DO THIS
 
 ```
 Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
@@ -123,7 +122,7 @@ a4096db Create README.md
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-### NEED TO DO THIS
+
 ![CircleCI Success](../assets/circleci_success.png)
 
 # Step 7: Submitting a Pull Request
