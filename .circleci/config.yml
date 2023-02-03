@@ -13,7 +13,7 @@ orbs:
 jobs:
   run-task:
     docker:
-      - image: circleci/node:16.10-browsers
+      - image: circleci/node:browsers
     steps:
       - aws-ecs/run-task:
           awsvpc: false
