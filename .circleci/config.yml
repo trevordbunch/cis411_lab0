@@ -13,7 +13,11 @@ orbs:
 jobs:
   run-task:
     docker:
+<<<<<<< HEAD
       - image: circleci/node:browsers
+=======
+      - image: cimg/node:12.16
+>>>>>>> 3d18c03 (Edited Docker image)
     steps:
       - aws-ecs/run-task:
           awsvpc: false
@@ -24,7 +28,7 @@ workflows:
   example-workflow:
       jobs:
       - docker/publish:
-          image: circleci/node:16.10-browsers
+          image: cimg/node:12.16
       - node/test:
           # This is the node version to use for the `cimg/node` tag
           # Relevant tags can be found on the CircleCI Developer Hub
