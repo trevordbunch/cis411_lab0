@@ -38,11 +38,7 @@ jobs:
       - run:
           name: "NPM start"
           command: "npm start"
-          background: true
-
-      - run:
-          name: "Stop NPM"
-          command: "npm stop"
+          timeout: 5
 
       - run: # Otherwise npm will run forever.
           name: "Stop circleci"
