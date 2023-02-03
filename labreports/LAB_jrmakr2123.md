@@ -70,6 +70,7 @@ d36ad90 Update LAB.md
 37be3c8 Update LAB_INSTRUCTIONS.md
 ```
 - _The accompanying diagram of what my feature branch precisely and conceptually represents..._
+![merge diagrem](../assets/merge%20graphic.jpg)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
