@@ -19,7 +19,6 @@ jobs:
   build-and-push:
     machine:
       image: ubuntu-2004:202101-01
-    resource_class: amd.medium
     steps:
       - checkout  
       - docker/check
