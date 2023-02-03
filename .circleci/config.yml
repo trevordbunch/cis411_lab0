@@ -34,8 +34,8 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "orbBasedImage" ]; then
               login="$(aws ecr get-login)"
               ${login}
-              docker tag app "${ECR_ENDPOINT}/app:${CIRCLE_SHA1}"
-              docker push "${ECR_ENDPOINT}/app:${CIRCLE_SHA1}"
+              docker tag app "${DOCKER_LOGIN}/lab1:latest"
+              docker push "${DOCKER_LOGIN}/lab1:latest"
             fi
 
 
