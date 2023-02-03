@@ -18,25 +18,40 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
 
-  unit-test:
+  # This tests whether the project initially starts in the execution environment.
+  # A better unit test would probably test the functionality of sections of code in server.js,
+  # but this seemed like a good starting point.
+  unit-test-starting:
     docker:
       - image: cimg/base:stable
     
     steps:
       - checkout
       - run:
+          name: "Install tools"
           command: "sudo apt-get install nodejs npm"
-      
+
       - run:
+          name: "Install dependency"
+          command: "npm install express"
+
+      - run:
+          name: "NPM start"
           command: "npm start"
           background: true
+
       - run:
+          name: "Stop NPM"
+          command: "npm stop"
+
+      - run: # Otherwise npm will run forever.
+          name: "Stop circleci"
           circleci-agent step halt
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  testing-environment-workflow:
     jobs:
       - say-hello
-      - unit-test
+      - unit-test-starting
