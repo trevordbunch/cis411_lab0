@@ -60,16 +60,20 @@ a4096db Create README.md
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
+  - The config file is telling circleci what version it is running and the different environments and jobs circleci is supposed to complete
 
 
 - What do the various sections on the config file do?  
+  * Jobs is a set of steps that are to be executed. 
+  * Version says which version of circleci to use
+  * Workflows are a set of rules defining a collection of jobs and their run order
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+  * That it is ready to be added to the original directory and implemented into the system  
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   
+   * I would automate this process so a person does not need to spend time on this
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
