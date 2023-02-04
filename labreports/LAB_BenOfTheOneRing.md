@@ -3,7 +3,7 @@ ___
 **Course:** CIS 411, Spring 2021  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
 **Name:** Ben Clarke  
-**GitHub Handle:** BenOfTheOneRing 
+**GitHub Handle:** BenOfTheOneRing  
 **Repository:** [Your Forked Repository](https://github.com/BenOfTheOneRing/cis411_lab1_CI)  
 ___
 
@@ -33,6 +33,7 @@ ___
 # Step 4: Creating a feature branch
 - The output of my git commit log
 ```
+
 0db2493 (HEAD -> labreport, origin/labreport) my commit
 00d5833 your commit and reference @trevordbunch in the message
 94babae (origin/purelab, origin/HEAD, purelab) Merge pull request #59 from JeffSinsel/purelab
@@ -57,7 +58,7 @@ a4096db Create README.md
 347bd50 Update LAB_INSTRUCTIONS.md
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
-
+![Diagram](../assets/Untitleddrawing.png)
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
   - The config file is telling circleci what version it is running and the different environments and jobs circleci is supposed to complete
@@ -78,20 +79,30 @@ a4096db Create README.md
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
-a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
-1ead543 remove LAB.md
-8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
-a4096db Create README.md
+058219b (HEAD -> purelab, origin/labreport, labreport) Commit number 2 @trevordbunch
+0534e15 just commited
+0db2493 my commit
+00d5833 your commit and reference @trevordbunch in the message
+94babae (origin/purelab, origin/HEAD) Merge pull request #59 from JeffSinsel/purelab
+2e92bd8 Fixed typos and links in markdown files
+fa4fc85 Update Instructions
+f8513e0 Update Node links to Instructions
+d4f22eb Update repo branch names
+0e3ae4c Reset purelab
+050b420 Merge pull request #2 from trevordbunch/main
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+
 ...
 44ce6ae Initial commit
 (END)
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+![CircleCI Success](../assets/CicleciRealSuccess.png)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
