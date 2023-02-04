@@ -63,16 +63,15 @@ ___
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-Trevors-MBP:cis411_lab0 trevorbunch$ git log --oneline
-dbf826a (HEAD -> labreport, origin/labreport) Answer Step 4
-a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
-1ead543 remove LAB.md
-8c38613 Initial commit of labreport with @tangollama
-dabceca (upstream/main, origin/main, origin/HEAD, main) Merge pull request #24 from tangollama/circleci
-a4096db Create README.md
-...
-44ce6ae Initial commit
-(END)
+wadeb@Wades-Laptop MINGW64 ~/documents/Git/cis411_lab1_CI/.circleci (labreport)
+$ git log --oneline
+932421a (HEAD -> labreport, origin/labreport) Updated question 3 and 4 of step 5
+fa385fb Updated question 2 of step 5
+dbcec42 Updated question 1 of step 5. Also the last commit updated both steps 3 and 4.
+49a2830 Updated step 3
+1cad5c6 I updated step 2
+87a096a I updated step 1 and my name @trevorbunch
+
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
