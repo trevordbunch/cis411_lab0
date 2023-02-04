@@ -13,7 +13,6 @@ ___
 
 ![Forked Repository](/assets/ForkLab1.svg)  
 
-
 # Step 2: Clone your forked repository from the command line  
 - **My local file directory is:** C:\Users\17177\Desktop\Junior\Spring2023\CIS411\GitHub\Lab00\cis411_lab1_CI
 
@@ -106,7 +105,7 @@ d36ad90 Update LAB.md
   - If I were to ready this project for continuous delivery, I would add some type of documentation notes into the configuration to provide written information of what was changed each delivery cycle. I would also add some type of process to check the quality of the code before it is deployed to prevent committing bugs into the live environment.
 
 # Step 6: Merging the feature branch
-* The output of my git commit log
+* The output of my git commit log:
 
 ```
 be04011 (HEAD -> main) Merge branch 'labreport'
@@ -146,15 +145,3 @@ a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
 ![CircleCI Success0](../assets/DashboardJobs.png)
 ![CircleCI Success1](../assets/JobsTop.png)
 ![CircleCI Success2](../assets/JobsList.png)
-
-
-# Step 7: Submitting a Pull Request
-_Remember to reference at least one other student in the PR content via their GitHub handle._
-
-
-
-# Step 8: [EXTRA CREDIT] Augment the core project
-PR reference in the report to one of the following:
-1. Add one or more unit tests to the core assignment project. 
-2. Configure the CircleCI config.yml to automatically build a Docker image of the project.
-3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance.
