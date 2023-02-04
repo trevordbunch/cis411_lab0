@@ -75,7 +75,7 @@ dbcec42 Updated question 1 of step 5. Also the last commit updated both steps 3 
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](files/Users/wbuhr/Desktop/circleci.png)
+![CircleCI Success](C:\Users\wadeb\OneDrive\Desktop\circleci.png)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
