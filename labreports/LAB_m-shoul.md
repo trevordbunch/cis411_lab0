@@ -74,11 +74,11 @@ d36ad90 Update LAB.md
 
 # Step 5: Setup a Continuous Integration configuration
 - **What is the .circleci/config.yml doing?**
-  - The  ```.circleci/config.yml``` defines how CircleCI builds, tests, and deploys the application. Ths file specifies the version, jobs, steps, amd workflow that make up the CI/CD pipeline. It include what commands to run, what environment to run them in, and the order in which the commands are to be executed.
+  - The  ```.circleci/config.yml``` defines how CircleCI builds, tests, and deploys the application. This file specifies the version, jobs, steps, and workflow that make up the CI/CD pipeline. It includes what commands to run, what environment to run them in, and the order in which the commands are to be executed.
 
 - **What do the various sections on the config file do?**
   
-1. **version:**  Defines the latest version of the CircleCI pipeline process engine. The version field is intended to be used in order to issue warnings for depreciation or breaking changes.
+1. **version:**  Defines the latest version of the CircleCI pipeline process engine. The version field is intended to be used to issue warnings for depreciation or breaking changes.
    
 2. **orbs:** Reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
    
@@ -92,12 +92,12 @@ d36ad90 Update LAB.md
    
 7. **node/test:** This part refers to a step that runs tests on a Node.js application to validate the functionality and quality of the code before it is deployed.
    
-8. **version:** "version" inside the workflow section represents the node version to use for the `cimg-node` tag. `cimg-node` is a Docker image created by CircleCI with continuous integration builds in mind.
+8. **version:** ```version``` inside the workflow section represents the node version to use for the `cimg-node` tag. `cimg-node` is a Docker image created by CircleCI with continuous integration builds in mind.
  
-9.  **pkg-manager:** This is a took used to manage the dependencies of a project. This is making sure that I have `npm` installed and available before the test runs.
+9.  **pkg-manager:** This is a tool used to manage the dependencies of a project. This is making sure that I have `npm` installed and available before the test runs.
 
 - **When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?**  
-  - Philosophically this indicates that the practices used by the team to integrate code into an application is effective and functional.
+  - Philosophically this indicates that the practices used by the team to integrate code into an application are effective and functional.
   - Practically this indicates the build has been run successfully without any errors and that the application has been built successfully.
   - Precisely this indicates that all tests have passed and that the integration and build of the application was a success.
 
