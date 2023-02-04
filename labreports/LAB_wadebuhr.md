@@ -23,8 +23,8 @@ ___
   "data": {
     "mutateAccount": {
       "id": "5c345bb5-0c54-44ae-8e57-f5f00b0eddbb",
-      "name": "TREVOR BUNCH",
-      "email": "tbunch@messiah.edu"
+      "name": "Wade Buhr",
+      "email": "wb1206@messiah.edu"
     }
   }
 }
@@ -33,9 +33,12 @@ ___
 # Step 4: Creating a feature branch
 - The output of my git commit log
 ```
-Insert the logs here.
+1cad5c6 (HEAD -> labreport, origin/labreport) I updated step 2
+87a096a I updated step 1 and my name @trevorbunch
+
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
+- ![Use Case](https://docs.google.com/drawings/d/e/2PACX-1vQy-mtPkgqkwyefgdCWCPIH7cjR1aQOubEyIlNbVxO5Lh1o9C42HJipZqaEuQNrhMiswT0qhr9tjfaT/pub?w=960&h=720)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
