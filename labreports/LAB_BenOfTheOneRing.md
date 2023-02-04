@@ -33,7 +33,28 @@ ___
 # Step 4: Creating a feature branch
 - The output of my git commit log
 ```
-Insert the logs here.
+0db2493 (HEAD -> labreport, origin/labreport) my commit
+00d5833 your commit and reference @trevordbunch in the message
+94babae (origin/purelab, origin/HEAD, purelab) Merge pull request #59 from JeffSinsel/purelab
+2e92bd8 Fixed typos and links in markdown files
+fa4fc85 Update Instructions
+f8513e0 Update Node links to Instructions
+d4f22eb Update repo branch names
+0e3ae4c Reset purelab
+050b420 Merge pull request #2 from trevordbunch/main
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+eafe253 Adjust submitting instructions
+47e83cd Add images to LabReport
+ec18770 Add Images
+dbf826a Answer Step 4
+a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
+1ead543 remove LAB.md
+8c38613 Initial commit of labreport with @tangollama
+dabceca Merge pull request #24 from tangollama/circleci
+a4096db Create README.md
+2f01bf4 Update LAB_INSTRUCTIONS.md
+347bd50 Update LAB_INSTRUCTIONS.md
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
 
