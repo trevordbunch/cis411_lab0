@@ -2,18 +2,19 @@
 ___
 **Course:** CIS 411, Spring 2021  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
-**Name:** Your Name  
-**GitHub Handle:** Your GitHub Handle  
-**Repository:** Your Forked Repository  
+**Name:** Ben Clarke  
+**GitHub Handle:** BenOfTheOneRing 
+**Repository:** [Your Forked Repository](https://github.com/BenOfTheOneRing/cis411_lab1_CI)  
 ___
 
 # Step 1: Fork this repository
-- The URL of my forked repository: ENTER URL HERE
-- The accompanying diagram of what my fork precisely and conceptually represents...
+- The URL of my forked repository: https://github.com/BenOfTheOneRing/cis411_lab1_CI
+- The accompanying diagram of what my fork precisely and conceptually represents 
+![Diagram](/assets/Lab_1_411%20drawing.svg)
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is...
-- The command to navigate to the directory when I open up the command line is...
+- My local file directory is ~/git 411/cis411_lab1_CI
+- The command to navigate to the directory when I open up the command line is cd /git 411/cis411_lab1_CI
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
@@ -21,9 +22,9 @@ ___
 {
   "data": {
     "mutateAccount": {
-      "id": "5c345bb5-0c54-44ae-8e57-f5f00b0eddbb",
-      "name": "TREVOR BUNCH",
-      "email": "tbunch@messiah.edu"
+      "id": "092e0a38-0803-491b-a9e3-34ae3137675a",
+      "name": "YOUR FULL NAME",
+      "email": "YOUR EMAIL"
     }
   }
 }
