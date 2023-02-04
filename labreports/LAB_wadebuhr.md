@@ -43,7 +43,7 @@ ___
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
   
-  The config file is the main part of connecting CircleCI to my project. It is written in YAML, a subset of JSON. It contains all the settings needed to deploy our cluster.
+  The config file is the main part of connecting CircleCI to my project. It is written in YAML, a subset of JSON. It contains all the settings needed to deploy our cluster, but you can add more configurations for what works best in the project at hand.
 
 
 - What do the various sections on the config file do?  
@@ -53,10 +53,12 @@ ___
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
    
-   
+  A successful CI build means that the new code changes were built, tested, and merged to a shared repository. 
+
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
    
+  Some additional changes I would add would be, to compile the new or changed code. Perform some unit tests, analyze the code. We could then add in an automated acceptance test. Have some integration/API tests, smoke test, and regression tests.
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
