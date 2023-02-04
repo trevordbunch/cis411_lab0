@@ -42,6 +42,7 @@ ___
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
+  From what I can gather, the .circleci/config.yml file first starts off withe the latest version of the CircleCI we are using. Next, the configuration needs a job to run, and an execution environment for that job to run in. Jobs are a collection of steps which are executed as a unit. We then added the docker execution environment to our job. The image conatins necessary tools to operate a build on CircleCI. We then added steps to the job, and asked it so say "Hello, World." Then we had to invoke jobs via workflows, which are a set of rules defining a collection of jobs and their run order.
 
 
 - What do the various sections on the config file do?  
