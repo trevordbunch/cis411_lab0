@@ -13,8 +13,8 @@ ___
 - ![Use Case](https://docs.google.com/drawings/d/e/2PACX-1vT1UQ2wunBIljyJ-u3DXaBvLQG3M-n3UwWUI-3tAJL_e756hUoP87uJDNseFzNoIPLKd_vJb3WvFrc-/pub?w=960&h=720)
 
 # Step 2: Clone your forked repository from the command line  
-- My local file directory is...
-- The command to navigate to the directory when I open up the command line is...
+- My local file directory is... ~/documents/Git/cis411_lab1_CI
+- The command to navigate to the directory when I open up the command line is... cd /documents/Git/cis411_lab1_CI
 
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
