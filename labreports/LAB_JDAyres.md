@@ -8,8 +8,7 @@ ___
 ___
 
 # Step 1: Fork this repository
-- The URL of my forked repository:
-   https://github.com/JDAyres/cis411_lab1_CI
+- The URL of my forked repository: https://github.com/JDAyres/cis411_lab1_CI
 - The accompanying diagram of what my fork precisely and conceptually represents...
  ![Diagram](../assets/Forking.drawio.png)
 
