@@ -118,7 +118,7 @@ Untitled Diagram.drawio.png
 - What is the .circleci/config.yml doing?  
 
 
-- What do the various sections on the config file do?  
+- It is creating multiple workflows and gahtering files from the internet witht he end result of saying hello.
    
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
