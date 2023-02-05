@@ -3,7 +3,7 @@
 ## Step 0: Create a GitHub account++
 1. If you don't have a GitHub account already, [create one](https://github.com/join). If you do, **record the name of your handle in your lab report** and **record a link to one repository you either follow or star**.
 2. If you don't already have _git_ installed on your development machine, [do so](https://git-scm.com/downloads).
-3. Install a text editor or some sort of application for local development. Lately, I'm partial to [Visual Studio Code](https://code.visualstudio.com/) and my instructions assume it's use, but you're welcome to diviate. _Each one should choose their own sword, etc. etc._
+3. Install a text editor or some sort of application for local development. Lately, I'm partial to [Visual Studio Code](https://code.visualstudio.com/) and my instructions assume it's use, but you're welcome to deviate. _Each one should choose their own sword, etc. etc._
 4. To run the project in Step 2, you'll need to have [node.js](https://nodejs.org/en/download/) and [npm](https://docs.npmjs.com/cli/install) installed.
 
 ## Step 1: Fork this repository
@@ -21,7 +21,7 @@
 1. If you haven't already - make sure that you have installed [node.js](https://nodejs.org/en/download/) and [npm](https://docs.npmjs.com/cli/install)
 4. Run ```npm install``` and watch the magic happen.
 5. Run ```npm start``` and navigate to http://localhost:4000/graphql.
-6. Run the following GraphQL mutation in GraphiQL and **record the response**.
+6. Run the following GraphQL mutation in GraphQL and **record the response**.
 ```
 mutation {
   mutateAccount(input: {
@@ -35,11 +35,12 @@ mutation {
   }
 }
 ```
+Use Ctrl+C or Cmd+C to exit out of the node application within the terminal.
 
 ## Step 4: Creating a feature branch
 [Branching and merging](https://www.atlassian.com/agile/software-development/branching) is a common tactic used in change management and feature development. We're going to use a branch (and eventually a merge) to build our lab report.
 1. Create the branch ```git  checkout -b labreport```.
-2. Create a lab report mardown file (ex. ```cp labreports/LAB_Template.md labreports/LAB_[GITHUB USERNAME].md``` ).
+2. Create a lab report markdown file (ex. ```cp labreports/LAB_Template.md labreports/LAB_[GITHUB USERNAME].md``` ).
 3. Add your lab report ```git add *```
 4. Add the file to your branch ```git commit -a -m "your commit and reference @trevordbunch in the message"```.
 5. Push the change to GitHub ```git push -u origin labreport```.
@@ -48,14 +49,14 @@ mutation {
 8. **Generate a simple diagram** that demonstrates the relationship between your main and feature branch in your forked repository.
 
 ## Step 5: Setup a Continuous Integration configuration
-1. [Signup for CircleCI](https://circleci.com/signup/) with your GitHub account.
+1. [Sign up for CircleCI](https://circleci.com/signup/) with your GitHub account.
 2. Login to CircleCI and add your project to your account (ex. https://circleci.com/add-projects/gh/[YOUR_GITHUB_HANDLE]) by clicking _Add Project_.
 3. Follow the setup instructions, including creating the .circleci directory and adding the default config.yml file.
 ![CircleCI setup](../assets/circleci_setup.png "CircleCI Setup")
 - Create a directory name .circleci in your project ```mkdir .circleci```.
 - Add a file to that directory named config.yml ```code .circleci/config.yml```.
 - Copy the content for the setup instructions into config.yml.
-4. **Document in your lab report** what your .circleci/config.yml is doing in as much detail as you can determine. A diagram is not required but is highlt encouraged. **Additionally, answer the following questions.**
+4. **Document in your lab report** what your .circleci/config.yml is doing in as much detail as you can determine. A diagram is not required but is highly encouraged. **Additionally, answer the following questions.**
 - What do the various sections on the config file do?
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?
