@@ -69,7 +69,7 @@ dbf826a Answer Step 4
 
 - What do the various sections on the config file do?  
 
-  The version sections of the config file specifiy what version of the applications you want to test the code for.
+  The version sections of the config file specify what version of the applications you want to test the code for.
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
 
@@ -82,11 +82,45 @@ dbf826a Answer Step 4
 # Step 6: Merging the feature branch
 * The output of my git commit log
 ```
-
+GitHub\cis411_lab1_CI>git log --oneline
+df79562 (HEAD -> purelab, origin/labreport, labreport) Edited Docker image
+9309d4d Edited Docker image
+cdb45ba Edited Docker image
+244ee4b Edited Docker image
+51f70dd Updated Config
+4fe25ec Edited Docker image
+0afd016 Updated config.yml
+7949e35 Edited Docker image
+3eda0b6 Removed Flutter and Added AWS task run
+535e44f Edited Flutter install
+54c4ec3 Added Flutter Dependencies
+956291c Updated config with a unit test, Docker image, and Amazon EC2 deploy
+caf3f40 Reverted config
+d1a5fa0 Updated config with a test, Docker creation, and an Amazon EC2 push
+502da70 Deleted accidental file
+7381fe8 Filled out first part of Step 5, and added cirCircleCI diagram
+8c311b2 Added circleci config
+081acf2 finished steps 2 & 3
+44a5796 Finished step 1, with diagram added
+12ff5eb created lab report based on template from @trevorbunch
+94babae (origin/purelab, origin/HEAD, typo) Merge pull request #59 from JeffSinsel/purelab
+2e92bd8 Fixed typos and links in markdown files
+fa4fc85 Update Instructions
+f8513e0 Update Node links to Instructions
+d4f22eb Update repo branch names
+0e3ae4c Reset purelab
+050b420 Merge pull request #2 from trevordbunch/main
+1fe415c Merge pull request #1 from trevordbunch/labreport
+13e571f Update Lab readme, instructions and templates
+...
+968099e remove test db
+7362cd1 working
+44ce6ae Initial commit
+(END)
 ```
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+![CircleCI Success](../assets/circleci-success.png)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
