@@ -13,7 +13,7 @@ ___
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is... cis411_lab1_CI
-- The command to navigate to the directory when I open up the command line is... 
+- The command to navigate to the directory when I open up the command line is... Done through GitHub Desktop.
 # Step 3: Run the application locally
 - My GraphQL response from adding myself as an account on the test project
 ``` json
@@ -33,7 +33,7 @@ ___
 ```
 - dc440ae
 - c23c2a5
-- 
+- 4f5a8ed
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents... https://docs.google.com/drawings/d/1DLrVMUR8OTO2an6CSotHWQTj5rNhFErvjyh_mM-6Gtk/edit?usp=sharing
 
@@ -61,11 +61,15 @@ ___
 # Step 6: Merging the feature branch
 * The output of my git commit log
 
+- dc440ae (Addition of diagrams/ creation of outline for lab report)
+- c23c2a5 (Completion of steps 1, 2, 5)
+- 4f5a8ed (Completion of step 4)
+- 
 
 
 
 * A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
