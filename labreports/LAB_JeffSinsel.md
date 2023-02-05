@@ -9,7 +9,7 @@ ___
 
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/JeffSinsel/cis411_lab1_CI/
-- The accompanying diagram of what my fork precisely and conceptually represents...
+- The accompanying diagram of what my fork precisely and conceptually represents...![ForkDiagram](../assets/ForkDiagram.jpg)
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is ```C:\Users\Jeff\Desktop\Python\GitHub\labreports\cis411_lab1_CI```
@@ -79,20 +79,26 @@ ce1fcea circleci default config
 7362cd1 working
 44ce6ae Initial commit
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents...
+- The accompanying diagram of what my feature branch precisely and conceptually represents...![BranchDiagram](../assets/BranchDiagram.jpg)
 
 # Step 5: Setup a Continuous Integration configuration
-- What is the .circleci/config.yml doing?  
-
+- What is the .circleci/config.yml doing? 
+ 
+The yml file is telling circleci what to do, for example, if a unit test is written into the yml, then circleci will execute that unit test usually through the form of CLI commands.
 
 - What do the various sections on the config file do?  
-   
+  - Orbs: defines which orbs are being used
+  - Version: defines version being run
+  - Jobs: the step-by-step process for which commands are run
+  - Workflow: the order in which the jobs are run
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+
+This indicates that practically, if the the CI build was deployed that it would work according to our test and philosophically that we did a good job coding this section.
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   
+
+Another job would have to be added in which the code is deployed to a place where the CD is taking place. Specifications about the branch of the build normally filter what is deployed.
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
@@ -159,6 +165,6 @@ _Remember to reference at least one other student in the PR content via their Gi
 
 # Step 8: [EXTRA CREDIT] Augment the core project
 PR reference in the report to one of the following:
-1. Add one or more unit tests to the core assignment project. 
+- [x] Add one or more unit tests to the core assignment project. 
 2. Configure the CircleCI config.yml to automatically build a Docker image of the project.
 3. Configure an automatic deployment of the successful CircleCI build to an Amazon EC2 instance.
