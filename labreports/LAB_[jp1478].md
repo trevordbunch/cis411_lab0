@@ -10,6 +10,8 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: https://github.com/jp1478/cis411_lab1_CI
 - The accompanying diagram of what my fork precisely and conceptually represents...
+  ![ForkDiagram](../assets/RepoDiagram.jpg)
+
 
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is: C:\Users\gltig\OneDrive\Documents\GitHub\cis411_lab1_CI
@@ -76,19 +78,25 @@ ce1fcea circleci default config
 44ce6ae Initial commit
 ```
 - The accompanying diagram of what my feature branch precisely and conceptually represents...
+  ![BranchDiagram](../assets/BranchDiagram.jpg)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
-
+    - It is defining a list of tests to perform on a project before sending it to production. 
 
 - What do the various sections on the config file do?  
-   
+   - jobs
+     - This section defines the jobs that CircleCI needs to run to make sure that the project is ready for production. 
+     - It currently contains only the say-hello job
+   - workflows
+     - This section defines workflows, which are series of jobs. 
+     - This is useful because it can simulate the progression of actions that would be performed in a certain use case. 
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-   
+    - It means that there are no errors with the current build and it is ready for production. 
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   
+   - I would add more jobs and workflows to the config file to test as many aspects of the project as possible. 
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
