@@ -10,7 +10,7 @@
 1. After logging in, navigate to the [purelab branch root](https://github.com/trevordbunch/cis411_lab1_CI/tree/purelab) of this repository.
 2. Fork this repository to your personal GitHub account (hint: read the page).
 3. **Record the URL to your forked repo in your lab report.**
-4. **Generate a simple diagram** (in Google Draw or your favorite diagramming tool) that demonstrates the relationship between _this_ repository and my account (trevordbunch) with your account and your newly forked repository. (i.e. Is this the same thing as a source control branch or is there something unique about a fork in a distributed version control system? _Hint... I'm asking for a reason._ If it's helpful, think about the relationship you and another student who is conducting the fork command each has to this repository.)
+4. **Generate a simple diagram** (in Google Draw or your favorite diagramming tool) that demonstrates the relationship between _this_ repository and my account (trevordbunch) with your account and your newly forked repository. (i.e. Is this the same thing as a source control branch or is there something unique about a fork in a distributed version control system? _Hint... I'm asking for a reason._ If it's helpful, think about the relationship you and another student who is conducting the fork command each has to this respository.)
 
 ## Step 2: Clone your forked repository from the command line
 1. Navigate to your forked repository in your GitHub account and copy the reference to your repository in from the <button class="btn btn-sm btn-primary">Clone or Download</button> button.
@@ -52,7 +52,7 @@ Use Ctrl+C or Cmd+C to exit out of the node application within the terminal.
 1. [Sign up for CircleCI](https://circleci.com/signup/) with your GitHub account.
 2. Login to CircleCI and add your project to your account (ex. https://circleci.com/add-projects/gh/[YOUR_GITHUB_HANDLE]) by clicking _Add Project_.
 3. Follow the setup instructions, including creating the .circleci directory and adding the default config.yml file.
-![CircleCI setup](assets/circleci_setup.png "CircleCI Setup")
+![CircleCI setup](../assets/circleci_setup.png "CircleCI Setup")
 - Create a directory name .circleci in your project ```mkdir .circleci```.
 - Add a file to that directory named config.yml ```code .circleci/config.yml```.
 - Copy the content for the setup instructions into config.yml.
