@@ -31,9 +31,11 @@ ___
 # Step 4: Creating a feature branch
 - The output of my git commit log
 ```
-Insert the logs here.
+- dc440ae
+- c23c2a5
+- 
 ```
-- The accompanying diagram of what my feature branch precisely and conceptually represents... 
+- The accompanying diagram of what my feature branch precisely and conceptually represents... https://docs.google.com/drawings/d/1DLrVMUR8OTO2an6CSotHWQTj5rNhFErvjyh_mM-6Gtk/edit?usp=sharing
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?
@@ -58,6 +60,8 @@ Insert the logs here.
 
 # Step 6: Merging the feature branch
 * The output of my git commit log
+
+
 
 
 * A screenshot of the _Jobs_ list in CircleCI
