@@ -112,7 +112,7 @@ Jonat@DESKTOP-0DNRIDL MINGW64 ~/Documents/GitHub/cis411_JG1579lab1_CI (labreport
 
 ```
 -
-Untitled Diagram.drawio.png
+assets\Networkpath.png
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
@@ -121,10 +121,10 @@ Untitled Diagram.drawio.png
 - It is creating multiple workflows and gahtering files from the internet witht he end result of saying hello.
    
 
-- When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
+- A sucessful CI means that multiple people can edit a file in real time. This emphasizes teamwork and muliple people working together for a common cause. 
    
 
-- If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+- Make sure that there are backups stored in case an error is made. This way we can go back and 
    
 
 # Step 6: Merging the feature branch
@@ -253,8 +253,7 @@ ce1fcea circleci default config
 (END)
 ```
 
-* A screenshot of the _Jobs_ list in CircleCI
-![CircleCI Success](../assets/circleci_success.png)
+assets\Cislab1 sucessful ping.jpg
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
