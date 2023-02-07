@@ -2,7 +2,7 @@
 This is the Continuous Integration for CIS 411: Systems Analysis and Design for [Messiah University](http://messiah.edu)
 
 This lab has four purposes:
-1. Within Systems Analysis and Design, you are going to need to articulate a DEVOPs process that includes **Continuous Integration (CI)**, practice of merging all developers' working copies to a shared mainline several times a day,[^1] and be able to describe what is conceptually happening behind the scenes.
+1. Within Systems Analysis and Design, you are going to need to articulate a DEVOPs process that includes **Continuous Integration (CI)**, practice merging all developers' working copies to a shared mainline several times a day,[^1] and be able to describe what is conceptually happening behind the scenes.
 2. Develop a comfort using CI tools, such as CircleCI.  
 3. Read installation requirements to get a system running locally, so that you learn how to contribute and test locally.
 4. To ensure that you are only accepting code that works within your repository, you will apply knowledge of spinning up a local environment into CI test condition.
@@ -16,7 +16,7 @@ This lab has four purposes:
 5. CircleCI account (STEP 5 in the Lab Instructions)
 
 ## 2. Lab Description
-Within this lab, you will need to fork a repository that has a simple node / graphql application.  After confirming that you can successfully run and perform simple actions within the application, then you will configuration CircleCI to perform a test that the application did not break with any changes in the commit before allowing the code into the repository.
+Within this lab, you will need to fork a repository that has a simple node / graphql application.  After confirming that you can successfully run and perform simple actions within the application, then you will configure CircleCI to perform a test that the application did not break with any changes in the commit before allowing the code into the repository.
 
 Detailed instructions are [here](LAB_INSTRUCTIONS.md), and you are expected to compile your findings into a labreport following this [template](labreports/LAB_Template.md).
 
