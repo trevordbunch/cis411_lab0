@@ -47,6 +47,8 @@ Insert the logs here.
    
 
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
+
+To ready the project for Continuous Delivery, I would need to make sure that the project has passed the automated tests to ensure its reliablity and integrity. I would also want to automate it. 
    
 
 # Step 6: Merging the feature branch
