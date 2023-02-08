@@ -1,0 +1,9 @@
+{
+  "data": {
+    "mutateAccount": {
+      "id": "65cdee98-a5ae-4a40-9cc2-28cb61d570df",
+      "name": "Justin Ayres",
+      "email": "ja1340@messiah.edu"
+    }
+  }
+}
