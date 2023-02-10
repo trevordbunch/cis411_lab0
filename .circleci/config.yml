@@ -26,7 +26,7 @@ jobs:
           command: "npm start"
       - run:
           name: "Confirm"
-          command: "Process begun"
+          command: "echo Process begun"
       - run:
           name: "Close"
           command: "Ctrl + c"
