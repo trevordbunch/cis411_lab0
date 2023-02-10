@@ -17,6 +17,19 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+  spin-up:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - run:
+          name: "Initialize"
+          command: "npm start"
+      - run:
+          name: "Confirm"
+          command: "Process begun"
+      - run:
+          name: "Close"
+          command: "Ctrl + c"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -24,3 +37,4 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - spin-up
