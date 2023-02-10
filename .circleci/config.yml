@@ -22,6 +22,9 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
+          name: "Find"
+          command: "cd Documents/GitHub/cis411_lab1_CI"
+      - run:
           name: "Initialize"
           command: "npm start"
       - run:
