@@ -27,6 +27,7 @@ jobs:
       - node/install:
           node-version: '16.13'
       - run: node --version
+      - run: npm install
       - run:
           name: "Initialize"
           command: "npm start"
