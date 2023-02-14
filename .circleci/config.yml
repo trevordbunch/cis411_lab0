@@ -28,6 +28,7 @@ jobs:
           pkg-manager: npm
           node-version: '16.13'
       - run: node --version
+      - run:
           name: "Initialize"
           command: "npm start"
       - run:
