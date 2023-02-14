@@ -26,7 +26,6 @@ jobs:
       - checkout
       - node/install:
           node-version: '16.13'
-          pkg-manager: npm
       - run: node --version
       - run:
           name: "Initialize"
