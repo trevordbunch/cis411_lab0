@@ -31,6 +31,7 @@ jobs:
       - run:
           name: "Initialize"
           command: "npm start"
+          background: true
       - run:
           name: "Confirm"
           command: "echo process begun"
