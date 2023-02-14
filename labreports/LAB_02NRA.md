@@ -2,8 +2,8 @@
 ___
 **Course:** CIS 411, Spring 2021  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
-**Name:** Nason Allen
-**GitHub Handle:** 02NRA
+**Name:** Nason Allen  
+**GitHub Handle:** 02NRA  
 **Repository:** https://github.com/02NRA/cis411_lab1_CI
 ___
 
