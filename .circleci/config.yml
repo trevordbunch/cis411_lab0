@@ -28,11 +28,6 @@ jobs:
           pkg-manager: npm
           node-version: '16.13'
       - run: node --version
-  spin-up:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - run:
           name: "Initialize"
           command: "npm start"
       - run:
