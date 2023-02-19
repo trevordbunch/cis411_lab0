@@ -1,6 +1,6 @@
 # Lab Report: Continuous Integration
 ___
-**Course:** CIS 411, Spring 2021  
+**Course:** CIS 411, Spring 2022  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
 **Name:** Jonathan Gaston
 **GitHub Handle:** JG1579 
