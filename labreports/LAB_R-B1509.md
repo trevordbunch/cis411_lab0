@@ -47,7 +47,9 @@ cd GitHubFiles\cis411_lab1_CI
 
 ```
 { 
- e4093d1 (HEAD -> labreport, origin/labreport) edited formating, redid step 3's run
+811fa99 (HEAD -> main, labreport) changed link to image, edited question answers, more Markdown formate edits, added image
+ef1d6e0 changed link to image, edited question answers, more Markdown formate edits
+e4093d1 (origin/labreport) edited formating, redid step 3's run
 45de295 Added Repository and Github Handle, as well as Name belatedly
 77cc2e0 (main) Step6
 9936e52 Merge pull request #62 from LAHardman/typo
