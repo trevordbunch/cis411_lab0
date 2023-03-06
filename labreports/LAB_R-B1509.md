@@ -137,64 +137,6 @@ a4096db Create README.md
 44ce6ae Initial commit
 (END)
 ```
-77cc2e0 (HEAD -> purelab, main, labreport) Step6
-9936e52 (origin/purelab, origin/labreport, origin/HEAD) Merge pull request #62 from LAHardman/typo
-5b9c31a Fixed typos
-94babae Merge pull request #59 from JeffSinsel/purelab
-2e92bd8 Fixed typos and links in markdown files
-fa4fc85 Update Instructions
-f8513e0 Update Node links to Instructions
-d4f22eb Update repo branch names
-0e3ae4c Reset purelab
-050b420 Merge pull request #2 from trevordbunch/main
-1fe415c Merge pull request #1 from trevordbunch/labreport
-13e571f Update Lab readme, instructions and templates
-eafe253 Adjust submitting instructions
-47e83cd Add images to LabReport
-ec18770 Add Images
-dbf826a Answer Step 4
-a9c1de6 Complete Step 1, 2 and 3 of LAB_TREVORDBUNCH
-1ead543 remove LAB.md
-8c38613 Initial commit of labreport with @tangollama
-dabceca Merge pull request #24 from tangollama/circleci
-a4096db Create README.md
-2f01bf4 Update LAB_INSTRUCTIONS.md
-347bd50 Update LAB_INSTRUCTIONS.md
-7aaa9f3 Update LAB_INSTRUCTIONS.md
-37393ae Bug fixed
-1949d2a Update LAB_INSTRUCTIONS.md
-d36ad90 Update LAB.md
-59ef18a Update LAB_INSTRUCTIONS.md
-37be3c8 Update LAB_INSTRUCTIONS.md
-97da547 Update LAB.md
-0bd6244 updated Step 0 title
-4562cd8 added npm and node install repreq
-255051e adding template
-13a09b7 Adding the LAB.md and correcting some instructions.
-d2ddea5 Version 0.0.1 of the lab isntructions
-ab312fc more progress
-62fb0a5 more progress
-fe1937b more in the lab instructions
-3e807fb first section
-9ae6b83 remove LAB.md
-e429c1a lab instructions
-97da547 Update LAB.md
-0bd6244 updated Step 0 title
-4562cd8 added npm and node install repreq
-255051e adding template
-13a09b7 Adding the LAB.md and correcting some instructions.
-d2ddea5 Version 0.0.1 of the lab isntructions
-ab312fc more progress
-62fb0a5 more progress
-fe1937b more in the lab instructions
-3e807fb first section
-9ae6b83 remove LAB.md
-e429c1a lab instructions
-ce1fcea circleci default config
-80bbdbb circleci default config
-968099e remove test db
-7362cd1 working
-44ce6ae Initial commit
 * A screenshot of the _Jobs_ list in CircleCI
 
 ![CircleCI Success](../assets/circleci_success.png)
