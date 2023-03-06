@@ -3,8 +3,8 @@ ___
 **Course:** CIS 411, Spring 2021  
 **Instructor(s):** [Trevor Bunch](https://github.com/trevordbunch)  
 **Name:** Rachel Beattie
-**GitHub Handle:** Your GitHub Handle  
-**Repository:** [Your Forked Repository ](https://github.com/R-B1509/cis411_lab1_CI) 
+**GitHub Handle:** [Your GitHub Handle](https://github.com/R-B1509)
+**Repository:** [Your Forked Repository](https://github.com/R-B1509/cis411_lab1_CI) 
 ___
 
 # Step 1: Fork this repository
@@ -28,24 +28,29 @@ cd GitHubFiles\cis411_lab1_CI
     }
   }
 }
-{```
+```
+
+```
+{
   "data": {
     "mutateAccount": {
-      "id": "520a41e8-e4ab-4275-88b3-d1d023e969fd",
-      "name": "YOUR FULL NAME",
-      "email": "YOUR EMAIL"
+      "id": "aa781253-bc60-4b58-b8f7-3f0b262adf25",
+      "name": "Rachel Beattie",
+      "email": "rb1509@messiah.edu"
     }
   }
 }
+```
 
 # Step 4: Creating a feature branch
 - The output of my git commit log
-```
-Insert the logs here.
 
 ```
 { 
-  9936e52 (HEAD -> labreport, origin/purelab, origin/labreport, origin/HEAD, purelab) Merge pull request #62 from LAHardman/typo
+ e4093d1 (HEAD -> labreport, origin/labreport) edited formating, redid step 3's run
+45de295 Added Repository and Github Handle, as well as Name belatedly
+77cc2e0 (main) Step6
+9936e52 Merge pull request #62 from LAHardman/typo
 5b9c31a Fixed typos
 94babae Merge pull request #59 from JeffSinsel/purelab
 2e92bd8 Fixed typos and links in markdown files
@@ -101,17 +106,19 @@ ce1fcea circleci default config
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
-<p>Running a test/task flow. It sets up the framework for the code's syntax, where each job is defined than run in the workflow, the orbs set up and run their framework individually from each other, while jobs are defined in the framework's set up, then run in the workflow</p>
+  <p> It sets up the framework for the code's syntax, where each job is defined than run in the workflow, the orbs set up and run their framework individually from each other so they don't need to be start up and run as separate tasks. Jobs are defined in the framework's set up after the config file is run, then they are executed in the workflow
+  </p>
 
 - What do the various sections of the config file do?  
-   <p>Orbs runs separate tasks after setting themselves up
-   Workflow runs through blocks of codes known as "jobs", of which there is node/test being run
-   </p>
+  <p> Orbs runs separate tasks after setting themselves up
+  Workflow runs through blocks of codes known as "jobs", of which there is node/test being run. This set up is used after npm start is run.
+  </p>
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
-<p>   That philosophically the build doesn't crash against itself, precisly the tasks that are run do not contradict each other and jobs are not missing aspects that are running dependent on another file/configuration
-</p>
+  <p> That philosophically the build doesn't crash against itself. Everything was run in a manner which didn't pull from something that didn't exist. Precisely the tasks that are run do not contradict each other and jobs are not missing aspects that are running dependent on another file/configuration. The build's set up was created before the the code meant to run was executed.
+  </p>
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
-   <p>Set up the jobs then in the workflow exclude the jobs of latter variations until they are complete</p>
+  <p> Set up the jobs then in the workflow exclude the jobs of latter variations until they are complete.
+  </p>
 
 # Step 6: Merging the feature branch
 
@@ -132,7 +139,7 @@ a4096db Create README.md
 * A screenshot of the _Jobs_ list in CircleCI
 
 ![CircleCI Success](../assets/circleci_success.png)
-[Default Setup](../assets/circleci_jobs_default.png)
+[Default Setup](../assets/circleci_jobs_success.png)
 
 # Step 7: Submitting a Pull Request
 _Remember to reference at least one other student in the PR content via their GitHub handle._
