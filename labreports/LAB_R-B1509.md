@@ -123,7 +123,7 @@ ce1fcea circleci default config
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
   <p> Set up the jobs then in the workflow exclude the jobs of latter variations until they are complete.
   
-  AG: "Add workflows that pushes your build to a cloud enviroment" Bunch from REC
+  AG: "Add workflows that pushes your build to a cloud environment" Bunch from REC
   </p>
 
 # Step 6: Merging the feature branch
