@@ -10,7 +10,7 @@ ___
 # Step 1: Fork this repository
 - The URL of my forked repository: (https://github.com/R-B1509/cis411_lab1_CI)
 - The accompanying diagram of what my fork precisely and conceptually represents...
-  [Diagram] (https://app.diagrams.net/#G1TCg8AHvt2hiXmjmDDsxAyjj1C1i3SZ1U)
+  ![Fork Diagram](/assets/Lab1ForkRel.drawio.svg)
 # Step 2: Clone your forked repository from the command line  
 - My local file directory is C:\Users\wolf3\GitHubFiles\cis411_lab1_CI
 - The command to navigate to the directory when I open up the command line is...<br>
@@ -104,7 +104,7 @@ ce1fcea circleci default config
 
 - The accompanying diagram of what my feature branch precisely and conceptually represents...<br>
 
- ![Branch Simplified Diagram](https://app.diagrams.net/#G1JtBDoP-EKBdtOal41TmPBIQ5gjORYVXK)
+ ![Branch Simplified Diagram](/assets/Lab1BranchRel.drawio.svg)
 
 # Step 5: Setup a Continuous Integration configuration
 - What is the .circleci/config.yml doing?  
@@ -114,12 +114,16 @@ ce1fcea circleci default config
 - What do the various sections of the config file do?  
   <p> Orbs runs separate tasks after setting themselves up
   Workflow runs through blocks of codes known as "jobs", of which there is node/test being run. This set up is used after npm start is run.
+
+  After Grading (AG) "Orbs are libraries of commands to use in jobs" - Bunch, Trevor from Rubric Evaluation Comments (REC)
   </p>
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?  
   <p> That philosophically the build doesn't crash against itself. Everything was run in a manner which didn't pull from something that didn't exist. Precisely the tasks that are run do not contradict each other and jobs are not missing aspects that are running dependent on another file/configuration. The build's set up was created before the the code meant to run was executed.
   </p>
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?  
   <p> Set up the jobs then in the workflow exclude the jobs of latter variations until they are complete.
+  
+  AG: "Add workflows that pushes your build to a cloud enviroment" Bunch from REC
   </p>
 
 # Step 6: Merging the feature branch
