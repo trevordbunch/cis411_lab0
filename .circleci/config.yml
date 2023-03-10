@@ -1,30 +1,70 @@
-build:
+version: 2.1
+jobs:
+  # running commands on a basic image
+  Hello-World:
     docker:
-      # specify the version you desire here
-      - image: circleci/node:7.10
-      - image: circleci/node:10.3
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
-    working_directory: ~/cis411_lab0
-    working_directory: ~/repo
-
+      - image: alpine:3.15
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - run:
+          name: Saying Hello
+          command: |
+            echo 'Hello World!'
+            echo 'This is the delivery pipeline'
+  # fetching code from the repo
+  Fetch-Code:
+    docker:
+      - image: cimg/base:2021.04
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-      - run: yarn install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-        
-      # run tests!
-      - run: yarn test
+      - run:
+          name: Getting the Code
+          command: |
+            ls -al
+            echo '^^^Your repo files^^^'
+  # running a node container
+  Using-Node:
+    docker:
+      - image: cimg/node:17.2
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - run:
+          name: Running the Node Container
+          command: |
+            node -v
+  Now-Complete:
+    docker:
+      - image: alpine:3.15
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - run:
+          name: Approval Complete
+          command: |
+            echo 'The work is now complete.'
+workflows:
+  Example-Workflow:
+    jobs:
+      - Hello-World
+      - Fetch-Code:
+          requires:
+            - Hello-World
+      - Using-Node:
+          requires:
+            - Fetch-Code
+      - Hold-for-Approval:
+          type: approval
+          requires:
+            - Using-Node
+            - Fetch-Code
+      - Now-Complete:
+          requires:
+            - Hold-for-Approval
